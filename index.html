@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Hack Spots</title>
+		<title>NYC Bookstores</title>
 		<script type="text/javascript" src="js/ICanHaz.js"></script>
 		<script type="text/javascript" src='http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.js'></script>
 		<script type="text/javascript" src='js/jquery.js '></script>
@@ -20,14 +20,15 @@
 	</head>
 <body>
 	<div id="wrapper">
-		<h1>Hack Spots</h1>
+		<h1>NYC Bookstores</h1>
 		<div>
 			<ul class="nav">
-				<li><strong>The collected favorites of those who hack</strong></li>
+				<li><strong>The Many Bookstores of New York City</strong></li>
 				<li><a href="#info">INFO</a> -</li>
 				<li><a href="http://jlord.github.com/sheetsee.js" target="_blank">POWERED BY SHEETSEE.JS</a> -</li>
-				<li><a href="http://www.github.com/jlord/hack-spots" target="_blank">GITHUB</a> -</li>
-				<li><a href="http://www.twitter.com/jllord" target="_blank">@JLLORD</a></li>
+				<li><a href="http://www.github.com/deltamualpha/nyc-bookstores" target="_blank">GITHUB</a> -</li>
+				<li><a href="http://www.twitter.com/alazyreader" target="_blank">@alazyreader</a> -</li>
+				<li>Based on a project by <a href="http://www.twitter.com/jllord" target="_blank">@JLLORD</a></li>
 			</ul>
 		</div>
 		<div class="container">
@@ -44,25 +45,16 @@
 			<div id="hackSpotsTable"></div>
 		</div>
 		<div id="info" class="container">
-			<h3>Contribute!</h3>
-			<div id="theNumberofSpots"></div>
-			<p>This website is hooked up to <a href="https://docs.google.com/spreadsheet/ccc?key=0Ao5u1U6KYND7dFVkcnJRNUtHWUNKamxoRGg4ZzNiT3c#gid=0" target="_blank">this Google Spreadsheet</a>, which I've shared, so click and add your favorite hack spots to the bottom of the list! For the map you'll need to <strong>get the lat and long</strong> of the spot, you can get that <a href="http://www.latlong.net/" target="_blank">here</a>. The locating of these places is helpful, so please try to fill out all the columns.</p>
-
 			<h3>Info</h3>
-			<p>When I'm visiting a new city I'd like to know which coffee shops have the best vibes, great coffee and are good for hunkering down and having a good hack. Yelp will tell you where the Starbucks is and Foursquare will tell you where your friend's have <em>been</em> - but did they like it and was it a grab in go place or a hack place? Plus, what about the people I don't follow on Foursquare or who can't check-in when in other countries?</p>
-
-			<p>Besides being a list I've wanted to have, it's a fantastic (or I think so) way of using <a href="http://jlord.github.io/sheetsee.js" target="_blank">sheetsee.js</a>, which is a little JavaScript library I've been working on. Sheetsee.js helps you hook a Google Spreadsheet (awesome for data and collaboration!) to a website to make data more visual (maps, tables, charts).</p>
-
-			<h3>Fork-n-Go</h3>
-			<p>This is a work-in-progress example of a fork-n-go project - which means, there is just a <a href="https://github.com/jlord/hack-spots" target="_blank">gh-pages branch in GitHub</a> for this project so when you fork it, you've got a live and hosted website instantly. BAM! Just copy the spreadsheet headers and create your own spreadsheet, swap out the spreadsheet key in index.html and commit those changes. BAM! You've got a live and hosted site with a spreadsheet you control. More on the <a href="http://www.github.com/jlord/hack-spots" target="_blank">readme</a>.</p>
+			<p>I love bookstores. And I love New York City. And I love silly projects. So I decided to combine all three into one: this website. Based on the fantastic <a href="https://github.com/jlord/hack-spots" target="_blank">hack-spots</a> from <a href="http://www.twitter.com/jllord" target="_blank">jllord</a>, this website takes bookstore data from a Google spreadsheet and maps it all out, with details.</p>
 		</div>
 	</div><!-- end wrapper -->
 
 	<script id="hackSpotsTable" type="text/html">
 		<table>
-		<tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">State</th><th class="tHeader">Country</th><th class="">Elsewhere</th></tr>
+		<tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">State</th><th class="tHeader">Country</th><th class="">Google Map</th></tr>
 		  {{#rows}}
-		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{state}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Yelp</a></td></tr>
+		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{state}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> </td></tr>
 		  	<tr class="hideRow"><td>wifi: {{wifipassword}}</td></tr>
 		  {{/rows}}
 	  </table>
@@ -70,28 +62,24 @@
 
 	<script id="latestSpot" type="text/html">
 			{{#rows}}
-				<h4 class="fauxButton">MOST RECENT SPOT</h4>
+				<h4 class="fauxButton">MOST RECENTLY ADDED</h4>
 				<h2>{{name}}</h2>
 				<p class="colorText">{{address}}<p>
 				<p class="colorText">{{city}}, {{state}} {{#postcode}}, {{postcode}} {{/postcode}}</p>
 				<ul>
-			  	<li><span class="category">Wifi:</span> {{wifipassword}}</li>
 			  	<li><span class="category">Outlets:</span> {{outlets}}</li>
-			  	<li><span class="category">Couch:</span> {{couch}}</li>
-			  	<li><span class="category">Large Table:</span> {{largetable}}</li>
-			  	<li><span class="category">Outdoor Seating:</span> {{outdoorseating}}</li>
-			  	<li><span class="category">Brewing:</span> {{brewing}}</li>
-			  	<li><span class="category">Contributed By:</span> <a href="http://www.twitter.com/{{contributerstwitter}}" target="_blank">@{{contributerstwitter}}</a></li>
+			  	<li><span class="category">Couches:</span> {{couch}}</li>
+			  	<li><span class="category">Caf&eacute;:</span> {{cafe}}</li>
+			  	<li><span class="category">Website:</span> <a href='{{website}}'>{{website}}</a></li>
 		  	</ul>
 		  	<ul>
 		  		<li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-		  		<li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li>
 		  	</ul>
 		  {{/rows}}
 	</script>
 
 	<script id="theNumberofSpots" type="text/html">
-		<p><strong><span class="red-text">{{numberOfSpots}}</span> hack spots strong!</p>
+		<p><strong><span class="red-text">{{numberOfSpots}}</span> bookstores mapped!</p>
 	</script>
 
 	<script id="popUps" type="text/html">
@@ -100,21 +88,18 @@
 
 	<script id="selectedSpot" type="text/html">
 		{{#rows}}
-			<h4 class="fauxButton">SELECTED SPOT</h4>
+		<h4 class="fauxButton">SELECTED BOOKSTORE</h4>
 			<h2>{{name}}</h2>
 			<p class="colorText">{{address}}<p>
 			<p class="colorText">{{city}}, {{state}} {{#postcode}}, {{postcode}} {{/postcode}}</p>
 			<ul>
-		  	<li><span class="category">Wifi:</span> {{wifipassword}}</li>
 		  	<li><span class="category">Outlets:</span> {{outlets}}</li>
-		  	<li><span class="category">Couch:</span> {{couch}}</li>
-		  	<li><span class="category">Large Table:</span> {{largetable}}</li>
-		  	<li><span class="category">Outdoor Seating:</span> {{outdoorseating}}</li>
-		  	<li><span class="category">Brewing:</span> {{brewing}}</li>
+		  	<li><span class="category">Couches:</span> {{couch}}</li>
+		  	<li><span class="category">Caf&eacute;:</span> {{cafe}}</li>
+			<li><span class="category">Website:</span> <a href='{{website}}'>{{website}}</a></li>
 	  	</ul>
 	  	<ul>
 	  		<li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-	  		<li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li>
 	  	</ul>
 	  {{/rows}}
 	</script>
