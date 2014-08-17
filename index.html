@@ -25,10 +25,8 @@
 			<ul class="nav">
 				<li><strong>The Many Bookstores of New York City</strong></li>
 				<li><a href="#info">INFO</a> -</li>
-				<li><a href="http://jlord.github.com/sheetsee.js" target="_blank">POWERED BY SHEETSEE.JS</a> -</li>
 				<li><a href="http://www.github.com/deltamualpha/nyc-bookstores" target="_blank">GITHUB</a> -</li>
-				<li><a href="http://www.twitter.com/alazyreader" target="_blank">@alazyreader</a> -</li>
-				<li>Based on a project by <a href="http://www.twitter.com/jllord" target="_blank">@JLLORD</a></li>
+				<li><a href="http://www.twitter.com/alazyreader" target="_blank">@alazyreader</a></li>
 			</ul>
 		</div>
 		<div class="container">
@@ -38,48 +36,43 @@
 			</div>
 			<div id="map"></div>
 		</div>
+		<div id="info" class="container">
+			<p>Although the bookselling community of New York City is much depleted from its heyday, there still are independent bookstores out there. Unfortunately, there has also been a lack of resources available to discover and visit the stores that do exist. This site, while not on the level of the old guides, can help with that.</p>
+			<p>While the data here are kept up-to-date to the best of my ability, I make no promises about the accuracy of locations or other details presented. If you spot an error, or I've missed a shop, please let me know by <a href="mailto:delta.mu.alpha@gmail.com">email</a> or <a href="https://www.twitter.com/alazyreader">twitter</a>. Powered by <a href="http://jlord.github.com/sheetsee.js" target="_blank">sheetsee.js</a>; based on a project by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>.
+		</div>
 		<div class="container">
 			<input id="tableFilter" type="text" placeholder="filter by.."></input>
 			<span class="clear button">Clear</span> <span class="resetMap button">Reset Map</span>
 			<span class="noMatches">no matches</span>
 			<div id="hackSpotsTable"></div>
 		</div>
-		<div id="info" class="container">
-			<h3>Info</h3>
-			<p>I love bookstores. And I love New York City. And I love silly projects. So I decided to combine all three into one: this website. Based on the fantastic <a href="https://github.com/jlord/hack-spots" target="_blank">hack-spots</a> from <a href="http://www.twitter.com/jllord" target="_blank">jllord</a>, this website takes bookstore data from a Google spreadsheet and maps it all out, with details.</p>
-
-			<p>The rules for inclusion are simple: Books must be the main commodity sold at the store. I'm on the fence whether to include specialty bookstores like religious bookstores or not.</p>
-
-			<p>Medium-term goals include adding short blurbs about each store as I (or other intrepid volunteers) visit the stores, and adding pictures somehow.</p>
-		</div>
 	</div><!-- end wrapper -->
 
 	<script id="hackSpotsTable" type="text/html">
 		<table>
-		<tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">State</th><th class="tHeader">Country</th><th class="">Google Map</th></tr>
+		<tr><th class="tHeader">Name</th><th class="tHeader">Address</th></tr>
 		  {{#rows}}
-		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{state}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> </td></tr>
-		  	<tr class="hideRow"><td>wifi: {{wifipassword}}</td></tr>
+		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}, {{city}} <a href="https://maps.google.com/maps?q={{address}},{{city}},NY" target="_blank">&#x2197;</a></td></tr>
 		  {{/rows}}
 	  </table>
 	</script>
 
 	<script id="latestSpot" type="text/html">
-			{{#rows}}
-				<h4 class="fauxButton">MOST RECENTLY ADDED</h4>
-				<h2>{{name}}</h2>
-				<p class="colorText">{{address}}<p>
-				<p class="colorText">{{city}}, {{state}} {{#postcode}}, {{postcode}} {{/postcode}}</p>
-				<ul>
-			  	<li><span class="category">Outlets:</span> {{outlets}}</li>
-			  	<li><span class="category">Seating:</span> {{chairs}}</li>
-			  	<li><span class="category">Caf&eacute;:</span> {{cafe}}</li>
-			  	<li><span class="category">Website:</span> <a href='{{website}}'>{{website}}</a></li>
-		  	</ul>
-		  	<ul>
-		  		<li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-		  	</ul>
-		  {{/rows}}
+		{{#rows}}
+			<h4 class="fauxButton">MOST RECENTLY ADDED</h4>
+			<h2>{{name}}</h2>
+			<p class="colorText">{{address}}<p>
+			<p class="colorText">{{city}}, NY {{#postcode}} {{postcode}} {{/postcode}}</p>
+			<p><a href="https://maps.google.com/maps?q={{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
+			<ul>
+		  	<li><span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  	    <span class="category">Caf&eacute;:</span> {{cafe}}</li>
+		  	<li><span class="category">Website:</span> <a href='{{website}}'>{{website}}</a></li>
+	  	</ul>
+	  	{{#description}}<ul>
+	  		<li class="description">{{description}}</li>
+	  	</ul>{{/description}}
+	  {{/rows}}
 	</script>
 
 	<script id="theNumberofSpots" type="text/html">
@@ -95,16 +88,16 @@
 		<h4 class="fauxButton">SELECTED BOOKSTORE</h4>
 			<h2>{{name}}</h2>
 			<p class="colorText">{{address}}<p>
-			<p class="colorText">{{city}}, {{state}} {{#postcode}}, {{postcode}} {{/postcode}}</p>
+			<p class="colorText">{{city}},NY {{#postcode}} {{postcode}} {{/postcode}}</p>
+			<p><a href="https://maps.google.com/maps?q={{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
 			<ul>
-		  	<li><span class="category">Outlets:</span> {{outlets}}</li>
-		  	<li><span class="category">Seating:</span> {{chairs}}</li>
-		  	<li><span class="category">Caf&eacute;:</span> {{cafe}}</li>
+		  	<li><span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  	    <span class="category">Caf&eacute;:</span> {{cafe}}</li>
 			<li><span class="category">Website:</span> <a href='{{website}}'>{{website}}</a></li>
 	  	</ul>
-	  	<ul>
-	  		<li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-	  	</ul>
+	  	{{#description}}<ul>
+	  		<li class="description">{{description}}</li>
+	  	</ul>{{/description}}
 	  {{/rows}}
 	</script>
 
@@ -150,7 +143,7 @@
 	  		var latestCompleteSpot = []
 	  		var startWithLatestRow = data.reverse()
 	  		startWithLatestRow.forEach(function(row){
-	  			if (!row.lat || !row.long || !row.name || !row.address || !row.city || !row.state ) return
+	  			if (!row.lat || !row.long || !row.name || !row.address || !row.city) return
 	  			else latestCompleteSpot.push(row)
 	  		})
 	  		return latestCompleteSpot[0]
