@@ -103,7 +103,6 @@
 
 	<script type="text/javascript">
 	  document.addEventListener('DOMContentLoaded', function() {
-	  	var gData
 	  	// var URL = "10z-2P8l88hLF35EodIjigs5cyCD7BtmfZS631JMtIUU" // test new spreadsheets
 	  	var URL = "0AnhMurQVK5pqdHU0UF9QTFRRNTQwR3hQTFdOV3laRGc"
 			Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
@@ -112,7 +111,8 @@
 		// so long, so messy
 
 	  function showInfo(gData) {
-	  	gData
+	  	// hoisting this so that other functions can find it
+	  	window.gData = gData;
 	  	// make the table, and the search bar
 	  	Sheetsee.makeTable(gData, "#hackSpotsTable")
 	  	Sheetsee.initiateTableFilter(gData, "#tableFilter", "#hackSpotsTable")
