@@ -101,6 +101,7 @@
 	  	var URL = "0AnhMurQVK5pqdHU0UF9QTFRRNTQwR3hQTFdOV3laRGc"
 			Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
 		})
+
         // so long, so messy
         function showInfo(gData) {
             tableOptions = {
@@ -116,8 +117,6 @@
             // useful bits from the original data
             var optionsJSON = ["name", "address", "city", "rowNumber"]
             var geoJSON = Sheetsee.createGeoJSON(gData, optionsJSON)
-            // change the color of the most recently added spot's marker
-            geoJSON[geoJSON.length - 1].properties["marker-color"] = "#FF4646"
 
             // create map, tilelayer (map background), markers and popups
             var map = Sheetsee.loadMap("map")
@@ -133,10 +132,11 @@
             })
             // set it and pan to it
             $('#latestSpot').html(latestSpot)
-            map.panTo([theLatestSpot.lat, theLatestSpot.long])
+            map.setView([theLatestSpot.lat, theLatestSpot.long], 14)
 
             // when someone clicks on a row, highlight it and
             // re-center the map
+            // TODO show popup, change marker color
             $('.spotRow').live("click", function(event) {
                 $('.spotRow').removeClass("selectedRow")
                 var rowNumber = $(this).closest("tr").attr("id")
@@ -148,7 +148,7 @@
                 $('#latestSpot').css("display", "none")
                 $('#selectedSpot').html(selectedSpot).css("display", "inline")
                 var selectedCoords = [dataElement[0].lat, dataElement[0].long]
-                map.panTo(selectedCoords)
+                map.setView(selectedCoords, 14)
             })
 
             // so that the first map and info that loads
@@ -198,7 +198,17 @@
                 numberOfSpots: gData.length
             })
             $('#theNumberofSpots').html(theNumberofSpots)
+
+            if(window.location.hash) {
+                $('#tableFilter').val(window.location.hash.substring(1)).keyup()
+                $('.spotRow').first().click()
+            }
         }
+
+        $(document).on('keyup', '#tableFilter', function() {
+            window.location.hash = $(this).val()
+            $('.spotRow').first().click()
+        })
     </script>
 </body>
 </html>
