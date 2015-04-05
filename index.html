@@ -50,7 +50,7 @@
 		<table>
 		<tr><th class="tHeader">Name</th><th class="tHeader">Address</th></tr>
 		  {{#rows}}
-		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}, {{city}} <a href="https://maps.google.com/maps?q={{address}},{{city}},NY" target="_blank">&#x2197;</a></td></tr>
+		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}, {{city}} <a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">&#x2197;</a></td></tr>
 		  {{/rows}}
 	  </table>
 	</script>
@@ -61,7 +61,7 @@
 			<h2>{{name}}</h2>
 			<p class="colorText">{{address}}<p>
 			<p class="colorText">{{city}}, NY {{#postcode}} {{postcode}} {{/postcode}}</p>
-			<p><a href="https://maps.google.com/maps?q={{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
+			<p><a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
 			<ul>
 		  	<li><span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		  	    <span class="category">Caf&eacute;:</span> {{cafe}}</li>
@@ -83,7 +83,7 @@
 			<h2>{{name}}</h2>
 			<p class="colorText">{{address}}<p>
 			<p class="colorText">{{city}},NY {{#postcode}} {{postcode}} {{/postcode}}</p>
-			<p><a href="https://maps.google.com/maps?q={{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
+			<p><a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
 			<ul>
 		  	<li><span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		  	    <span class="category">Caf&eacute;:</span> {{cafe}}</li>
