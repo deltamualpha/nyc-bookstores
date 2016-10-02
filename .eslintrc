@@ -26,7 +26,6 @@
     },
     "globals": {
         "Sheetsee": true,
-        "Tabletop": true,
         "$": true
   }
 }
