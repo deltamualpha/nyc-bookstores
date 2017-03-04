@@ -76,13 +76,13 @@
   },
   {
     "name": "PowerHouse Arena",
-    "address": "37 Main St",
+    "address": "28 Adams St",
     "city": "Brooklyn",
     "state": "NY",
     "postcode": "11201",
     "description": "PowerHouse Arena is a combination event/exhibition space and bookstore. In addition to stocking a tightly-curated selection of current literary fiction and non-fiction, they also have a small childrens' department and New York-related books.",
-    "lat": "40.7030247",
-    "long": "-73.9903977",
+    "lat": "40.7029566",
+    "long": "-73.9910253",
     "country": "USA",
     "website": "http://www.powerhousearena.com/",
     "events": "Yes",
@@ -101,21 +101,6 @@
     "country": "USA",
     "website": "http://www.mercerstreetbooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
-  },
-  {
-    "name": "St. Mark's Bookshop",
-    "address": "136 East 3rd St",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10009",
-    "description": "The newest incarnation of the venerable St. Marks is a paean to modern design, built into one of the first public housing projects in the city. Stocking mainly literary fiction and non-fiction, the store also has small childrens and periodicals sections.",
-    "lat": "40.723727",
-    "long": "-73.985927",
-    "country": "USA",
-    "website": "http://www.stmarksbookshop.com/",
-    "events": "Yes",
     "cafe": "No",
     "hexcolor": "#B9FCFC"
   },
@@ -159,7 +144,7 @@
     "lat": "40.7357655",
     "long": "-74.0052141",
     "country": "USA",
-    "website": "http://www.marcjacobs.com/store/detail/291219",
+    "website": "https://www.marcjacobs.com/bookmarc/",
     "events": "No",
     "cafe": "No",
     "hexcolor": "#B9FCFC"
@@ -225,21 +210,6 @@
     "hexcolor": "#B9FCFC"
   },
   {
-    "name": "BookCourt",
-    "address": "163 Court St",
-    "city": "Brooklyn",
-    "state": "NY",
-    "postcode": "11201",
-    "description": "An otherwise normal-seeming Brooklyn storefront opens up into a large, sunny, airy bookstore. BookCourt is a general-interest bookstore with a special emphasis on literary fiction (see the special sections for New Directions and NY Review Of Books titles) as well as a large, well-stocked children's section. They also host frequent book signings in the large back room.",
-    "lat": "40.68866",
-    "long": "-73.99265",
-    "country": "USA",
-    "website": "http://bookcourt.com/",
-    "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
-  },
-  {
     "name": "Community Bookstore",
     "address": "212 Court St",
     "city": "Brooklyn",
@@ -285,21 +255,6 @@
     "hexcolor": "#B9FCFC"
   },
   {
-    "name": "Bergen Street Comics",
-    "address": "470 Bergen St",
-    "city": "Brooklyn",
-    "state": "NY",
-    "postcode": "11217",
-    "description": "An all-ages comic shop, Bergen Street Comics specializes in collected trades of series, as opposed to the traditional \"piles of long-boxes of back issues\" that a lot of comic stores fall back on. The store also hosts events and signings, and has its own small-press for indie work.",
-    "lat": "40.680852",
-    "long": "-73.975745",
-    "country": "USA",
-    "website": "http://bergenstreetcomics.com/",
-    "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
-  },
-  {
     "name": "P.S. Bookshop",
     "address": "76 Front St",
     "city": "Brooklyn",
@@ -315,7 +270,7 @@
     "hexcolor": "#B9FCFC"
   },
   {
-    "name": "Loft Book Store Cafe ",
+    "name": "Loft Book Store Cafe",
     "address": "350 Tompkins Ave",
     "city": "Brooklyn",
     "state": "NY",
@@ -451,13 +406,13 @@
   },
   {
     "name": "Bankstreet Bookstore",
-    "address": "2879 Broadway",
+    "address": "2780 Broadway",
     "city": "New York",
     "state": "NY",
     "postcode": "10025",
     "description": "Bankstreet Bookstore is a children's and teacher's bookstore in Morningside Heights. (The name comes from the college it grew out of.) Two stories, with teen and teacher reference mainly upstairs, and picture books and toys mainly on the ground level.",
-    "lat": "40.805477",
-    "long": "-73.966172",
+    "lat": "40.8021399",
+    "long": "-73.9693825",
     "country": "USA",
     "website": "http://www.bankstreetbooks.com/",
     "events": "Yes",
@@ -506,7 +461,7 @@
     "country": "USA",
     "website": "http://www.shakeandco.com/",
     "events": "No",
-    "cafe": "No",
+    "cafe": "Yes",
     "hexcolor": "#B9FCFC"
   },
   {
@@ -690,21 +645,6 @@
     "hexcolor": "#B9FCFC"
   },
   {
-    "name": "Crawford Doyle Booksellers",
-    "address": "1082 Madison Ave",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10028",
-    "description": "Crawford Doyle occupies a space that's been home to bookstores since the 1930s. Mostly new fiction, with a few shelves of first editions on display, the store is picturesque, with high shelves and dark old wood. In the basement is Pryor Johnson Rare Books, with a selection of rare books ranging from the 1600s to the present.",
-    "lat": "40.778019",
-    "long": "-73.961077",
-    "country": "USA",
-    "website": "http://crawforddoyle.com/",
-    "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
-  },
-  {
     "name": "Books Of Wonder",
     "address": "18 West 18th St",
     "city": "New York",
@@ -751,15 +691,15 @@
   },
   {
     "name": "Revolution Books",
-    "address": "146 W. 26th St",
+    "address": "437 Malcolm X Blvd",
     "city": "New York",
     "state": "NY",
-    "postcode": "10001",
-    "description": "If bluestockings is the friendly face of a feminist co-operative, its revolutionary counterpart in New York City is the appropriately-named Revolution Books, a bastion of communism in the Big Apple. It specializes in revolutionary political texts, of course, but also has a broad selection of those same texts in Spanish. Special promotional space given to books by Bob Avakain, chairman of the Revolutionary Communist Party USA (not to be confused with the Communist Party USA).",
-    "lat": "40.7454283",
-    "long": "-73.9933777",
+    "postcode": "10037",
+    "description": "If bluestockings is the friendly face of a feminist co-operative, its revolutionary counterpart in New York City is the appropriately-named Revolution Books, a bastion of communism in the Big Apple. It specializes in revolutionary political texts, of course, but also has a broad selection of those same texts in Spanish. Special promotional space given to books by Bob Avakian, chairman of the Revolutionary Communist Party USA (not to be confused with the Communist Party USA).",
+    "lat": "40.8121889",
+    "long": "-73.9448338",
     "country": "USA",
-    "website": "http://www.revolutionbooksnyc.org/home.html",
+    "website": "http://www.revolutionbooksnyc.org/",
     "events": "Yes",
     "cafe": "No",
     "hexcolor": "#B9FCFC"
@@ -1182,6 +1122,21 @@
     "website": "http://pioneerworks.org/",
     "events": "Yes",
     "cafe": "No",
+    "hexcolor": "#B9FCFC"
+  },
+  {
+    "name": "Archestratus",
+    "address": "160 Huron St.",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11222",
+    "description": "",
+    "lat": "40.7328481",
+    "long": "-73.9573405",
+    "country": "USA",
+    "website": "https://www.archestrat.us/",
+    "events": "Yes",
+    "cafe": "Yes",
     "hexcolor": "#B9FCFC"
   }
 ]
