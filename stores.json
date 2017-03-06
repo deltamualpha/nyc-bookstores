@@ -1095,6 +1095,21 @@
     "hexcolor": "#B9FCFC"
   },
   {
+    "name": "Joanne Hendricks Cookbooks",
+    "address": "488 Greenwich St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10013",
+    "description": "",
+    "lat": "40.7250566",
+    "long": "-74.0092685",
+    "country": "USA",
+    "website": "http://joannehendrickscookbooks.com/",
+    "events": "No",
+    "cafe": "No",
+    "hexcolor": "#B9FCFC"
+  },
+  {
     "name": "Archestratus",
     "address": "160 Huron St",
     "city": "Brooklyn",
