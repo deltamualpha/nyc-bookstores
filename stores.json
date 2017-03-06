@@ -211,21 +211,6 @@
   },
   {
     "name": "Community Bookstore",
-    "address": "212 Court St",
-    "city": "Brooklyn",
-    "state": "NY",
-    "postcode": "11201",
-    "description": "",
-    "lat": "40.686706",
-    "long": "-73.993992",
-    "country": "USA",
-    "website": "http://communitybookstore.net/",
-    "events": "",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
-  },
-  {
-    "name": "Community Bookstore",
     "address": "143 7th Ave",
     "city": "Brooklyn",
     "state": "NY",
@@ -387,21 +372,6 @@
     "website": "http://www.kinokuniya.com/us/",
     "events": "Yes",
     "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
-  },
-  {
-    "name": "Left Bank Books",
-    "address": "17 8th Ave",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10014",
-    "description": "A neighborhood used bookshop in the French mold, Left Bank specializes in Modernist first editions and a vast institutional memory in the form of its clerks and kibitzing locals, whom can be found sitting and talking at any time in the small shop.",
-    "lat": "40.737788",
-    "long": "-74.004817",
-    "country": "USA",
-    "website": "http://leftbankbooksny.com/",
-    "events": "No",
-    "cafe": "No",
     "hexcolor": "#B9FCFC"
   },
   {
