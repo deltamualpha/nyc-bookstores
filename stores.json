@@ -1110,6 +1110,21 @@
     "hexcolor": "#B9FCFC"
   },
   {
+    "name": "Sister's Uptown Bookstore",
+    "address": "1942 Amsterdam Ave",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10032",
+    "description": "",
+    "lat": "40.8324894",
+    "long": "-73.9426783",
+    "country": "USA",
+    "website": "http://www.sistersuptownbookstore.com//",
+    "events": "Yes",
+    "cafe": "Yes",
+    "hexcolor": "#B9FCFC"
+  },
+  {
     "name": "Archestratus",
     "address": "160 Huron St",
     "city": "Brooklyn",
