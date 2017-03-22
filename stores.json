@@ -1125,6 +1125,21 @@
     "hexcolor": "#B9FCFC"
   },
   {
+    "name": "Stories",
+    "address": "458 Bergen St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11217",
+    "description": "",
+    "lat": "40.6809676",
+    "long": "-73.9761622",
+    "country": "USA",
+    "website": "http://storiesbk.com/bookshop/",
+    "events": "Yes",
+    "cafe": "No",
+    "hexcolor": "#B9FCFC"
+  },
+  {
     "name": "Archestratus",
     "address": "160 Huron St",
     "city": "Brooklyn",
