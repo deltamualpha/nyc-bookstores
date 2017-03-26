@@ -113,18 +113,15 @@
     }
 
     function updateSelectedStore(store) {
-        var geometry = store.geometry ? store.geometry.coordinates : [store.long, store.lat];
-        var properties = store.properties ? store.properties : store;
+        map.flyTo({center: [store.long, store.lat]});
 
-        map.flyTo({center: geometry});
-
-        popup.setLngLat(geometry)
-        .setHTML(properties.name)
+        popup.setLngLat([store.long, store.lat])
+        .setHTML(store.name)
         .addTo(map);
 
         $('#info').hide();
         var template = $('#selectedStore').html();
-        var rendered = Mustache.render(template, {store: properties});
+        var rendered = Mustache.render(template, {store: store});
         $('#selected').html(rendered);
         $('#selected').show();
     }
@@ -176,7 +173,7 @@
             if (features.length) {
                 var store = features[0];
                 // Get coordinates from the symbol and center the map on those coordinates
-                updateSelectedStore(store);
+                updateSelectedStore(store.properties);
             }
         });
 
