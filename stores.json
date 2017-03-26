@@ -11,8 +11,7 @@
     "country": "USA",
     "website": "http://www.housingworks.org/bookstore/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "McNally Jackson Books",
@@ -26,8 +25,7 @@
     "country": "USA",
     "website": "http://www.mcnallyjackson.com/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Word Bookstore",
@@ -41,8 +39,7 @@
     "country": "USA",
     "website": "http://www.wordbookstores.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Astoria Bookshop",
@@ -56,8 +53,7 @@
     "country": "USA",
     "website": "http://www.astoriabookshop.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Enigma Bookstore",
@@ -71,8 +67,7 @@
     "country": "USA",
     "website": "https://www.facebook.com/pages/Enigma-Bookstore/138243176369174",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "PowerHouse Arena",
@@ -86,8 +81,7 @@
     "country": "USA",
     "website": "http://www.powerhousearena.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Mercer Street Books & Records",
@@ -101,8 +95,7 @@
     "country": "USA",
     "website": "http://www.mercerstreetbooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Mast Books",
@@ -116,8 +109,7 @@
     "country": "USA",
     "website": "http://www.mastbooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "The Mysterious Bookshop",
@@ -131,8 +123,7 @@
     "country": "USA",
     "website": "http://www.mysteriousbookshop.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Bookmarc",
@@ -146,8 +137,7 @@
     "country": "USA",
     "website": "https://www.marcjacobs.com/bookmarc/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Singularity&Co.",
@@ -161,8 +151,7 @@
     "country": "USA",
     "website": "http://singularityshop.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Ursus Books",
@@ -176,8 +165,7 @@
     "country": "USA",
     "website": "http://www.ursusbooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Alabaster Bookshop",
@@ -191,8 +179,7 @@
     "country": "USA",
     "website": "",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Unnameable Books",
@@ -206,8 +193,7 @@
     "country": "USA",
     "website": "http://unnameablebooks.blogspot.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Community Bookstore",
@@ -221,8 +207,7 @@
     "country": "USA",
     "website": "http://communitybookstore.net/",
     "events": "",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Greenlight Bookstore",
@@ -236,8 +221,7 @@
     "country": "USA",
     "website": "http://greenlightbookstore.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "P.S. Bookshop",
@@ -251,8 +235,7 @@
     "country": "USA",
     "website": "http://www.psbnyc.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Loft Book Store Cafe",
@@ -266,8 +249,7 @@
     "country": "USA",
     "website": "http://loft-book-store-cafe.blogspot.com/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Dashwood Books",
@@ -281,8 +263,7 @@
     "country": "USA",
     "website": "http://www.dashwoodbooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Molasses Books",
@@ -296,8 +277,7 @@
     "country": "USA",
     "website": "https://www.facebook.com/MolassesBooks",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "The Corner Bookstore",
@@ -311,8 +291,7 @@
     "country": "USA",
     "website": "http://cornerbookstorenyc.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "East Village Books",
@@ -326,8 +305,7 @@
     "country": "USA",
     "website": "http://www.buyusedbooksnewyork.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Strand Bookstore",
@@ -341,8 +319,7 @@
     "country": "USA",
     "website": "http://www.strandbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Bluestockings",
@@ -356,8 +333,7 @@
     "country": "USA",
     "website": "http://bluestockings.com/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Kinokunya",
@@ -371,8 +347,7 @@
     "country": "USA",
     "website": "http://www.kinokuniya.com/us/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Bankstreet Bookstore",
@@ -386,8 +361,7 @@
     "country": "USA",
     "website": "http://www.bankstreetbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Unoppressive Non-Imperialist Bargain Books",
@@ -401,8 +375,7 @@
     "country": "USA",
     "website": "http://unoppressivebooks.blogspot.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Three Lives & Company",
@@ -416,8 +389,7 @@
     "country": "USA",
     "website": "http://www.threelives.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Shakespeare & Company",
@@ -431,8 +403,7 @@
     "country": "USA",
     "website": "http://www.shakeandco.com/",
     "events": "No",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Book Culture",
@@ -446,8 +417,7 @@
     "country": "USA",
     "website": "http://www.bookculture.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Book Culture on Broadway",
@@ -461,8 +431,7 @@
     "country": "USA",
     "website": "http://www.bookculture.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "bookbook",
@@ -476,8 +445,7 @@
     "country": "USA",
     "website": "http://bookbooknyc.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Westsider Rare & Used Books",
@@ -491,8 +459,7 @@
     "country": "USA",
     "website": "http://westsiderbooks.com/bookstore.html",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Word Up Books",
@@ -506,8 +473,7 @@
     "country": "USA",
     "website": "http://wordupbooks.wordpress.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Turn The Page... Again",
@@ -521,8 +487,7 @@
     "country": "USA",
     "website": "http://www.turnthepageagain.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Book Thug Nation",
@@ -536,8 +501,7 @@
     "country": "USA",
     "website": "http://www.bookthugnation.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Idlewild Books Manhattan",
@@ -551,8 +515,7 @@
     "country": "USA",
     "website": "http://www.idlewildbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Idlewild Books Brooklyn",
@@ -566,8 +529,7 @@
     "country": "USA",
     "website": "http://www.idlewildbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Idlewild Books Williamsburg",
@@ -581,8 +543,7 @@
     "country": "USA",
     "website": "http://www.idlewildbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Posman Books Chelsea Market",
@@ -596,8 +557,7 @@
     "country": "USA",
     "website": "http://posmanbooks.com/our-stores/chelsea-market/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Posman Books Rockefeller Center",
@@ -611,8 +571,7 @@
     "country": "USA",
     "website": "http://posmanbooks.com/our-stores/rockefeller-center/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Books Of Wonder",
@@ -626,8 +585,7 @@
     "country": "USA",
     "website": "http://www.booksofwonder.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Bonnie Slotnick Cookbooks",
@@ -641,8 +599,7 @@
     "country": "USA",
     "website": "http://www.bonnieslotnickcookbooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Kitchen Arts & Letters",
@@ -656,8 +613,7 @@
     "country": "USA",
     "website": "http://kitchenartsandletters.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Revolution Books",
@@ -671,8 +627,7 @@
     "country": "USA",
     "website": "http://www.revolutionbooksnyc.org/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Spoonbill & Sugartown, Booksellers",
@@ -686,8 +641,7 @@
     "country": "USA",
     "website": "http://www.spoonbillbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Melville House Publishers",
@@ -701,8 +655,7 @@
     "country": "USA",
     "website": "http://www.mhpbooks.com/about/the-melville-house-bookstore-2/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Printed Matter",
@@ -716,8 +669,7 @@
     "country": "USA",
     "website": "http://printedmatter.org/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "192 Books",
@@ -731,8 +683,7 @@
     "country": "USA",
     "website": "http://www.192books.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Freebird Books",
@@ -746,8 +697,7 @@
     "country": "USA",
     "website": "http://www.freebirdbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Berl's Brooklyn Poetry Shop",
@@ -761,8 +711,7 @@
     "country": "USA",
     "website": "http://www.berlspoetry.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Hullabaloo Books",
@@ -776,8 +725,7 @@
     "country": "USA",
     "website": "https://www.facebook.com/HullabalooBooks",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Here's A Book Store",
@@ -791,8 +739,7 @@
     "country": "USA",
     "website": "https://www.facebook.com/pages/Heres-A-Book-Store/115732881789797",
     "events": "?",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Argosy Books",
@@ -806,8 +753,7 @@
     "country": "USA",
     "website": "http://www.argosybooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Black Sea Book Store",
@@ -821,8 +767,7 @@
     "country": "USA",
     "website": "",
     "events": "?",
-    "cafe": "?",
-    "hexcolor": "#B9FCFC"
+    "cafe": "?"
   },
   {
     "name": "PowerHouse on 8th",
@@ -836,8 +781,7 @@
     "country": "USA",
     "website": "http://powerhouseon8th.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Terrace Books",
@@ -851,8 +795,7 @@
     "country": "USA",
     "website": "http://terracebooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "BookMark Shoppe",
@@ -866,8 +809,7 @@
     "country": "USA",
     "website": "http://www.bookmarkshoppe.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Boulevard Books and Café",
@@ -881,8 +823,7 @@
     "country": "USA",
     "website": "https://www.facebook.com/BoulevardBooksandCafe",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Better Read Than Dead",
@@ -896,8 +837,7 @@
     "country": "USA",
     "website": "",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Civil Service Book Shop",
@@ -911,8 +851,7 @@
     "country": "USA",
     "website": "",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Desert Island Comics",
@@ -926,8 +865,7 @@
     "country": "USA",
     "website": "http://desertislandbrooklyn.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "La Casa Azul Bookstore",
@@ -941,8 +879,7 @@
     "country": "USA",
     "website": "http://www.lacasaazulbookstore.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Topos Bookstore Cafe",
@@ -956,8 +893,7 @@
     "country": "USA",
     "website": "http://toposbookstore.com/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Human Relations Books",
@@ -971,8 +907,7 @@
     "country": "USA",
     "website": "http://www.humanrelationsbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Respect For Life Books-N-Things",
@@ -986,8 +921,7 @@
     "country": "USA",
     "website": "",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Every Thing Goes Book Cafe and Neighborhood Stage",
@@ -1001,8 +935,7 @@
     "country": "USA",
     "website": "http://www.etgstores.com/bookcafe/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "The Center for Fiction",
@@ -1016,8 +949,7 @@
     "country": "USA",
     "website": "http://www.centerforfiction.org/about/the-center-bookshop/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "The Drama Book Shop",
@@ -1031,8 +963,7 @@
     "country": "USA",
     "website": "http://www.dramabookshop.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Catland",
@@ -1046,8 +977,7 @@
     "country": "USA",
     "website": "http://www.catlandbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Logos Bookstore",
@@ -1061,8 +991,7 @@
     "country": "USA",
     "website": "http://www.logosbookstorenyc.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Pioneer Books",
@@ -1076,8 +1005,7 @@
     "country": "USA",
     "website": "http://pioneerworks.org/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Joanne Hendricks Cookbooks",
@@ -1091,8 +1019,7 @@
     "country": "USA",
     "website": "http://joannehendrickscookbooks.com/",
     "events": "No",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Sister's Uptown Bookstore",
@@ -1106,8 +1033,7 @@
     "country": "USA",
     "website": "http://www.sistersuptownbookstore.com//",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Stories",
@@ -1121,8 +1047,7 @@
     "country": "USA",
     "website": "http://storiesbk.com/bookshop/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Archestratus",
@@ -1136,8 +1061,7 @@
     "country": "USA",
     "website": "https://www.archestrat.us/",
     "events": "Yes",
-    "cafe": "Yes",
-    "hexcolor": "#B9FCFC"
+    "cafe": "Yes"
   },
   {
     "name": "Quest Bookshop",
@@ -1151,8 +1075,7 @@
     "country": "USA",
     "website": "http://www.questbookshop.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "The Austin Book Shop",
@@ -1166,8 +1089,7 @@
     "country": "USA",
     "website": "https://www.facebook.com/The-Austin-Book-Shop-177311612281452/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Ben's Books",
@@ -1181,8 +1103,7 @@
     "country": "USA",
     "website": "http://bensbooks.nyc/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "The Book Cellar",
@@ -1196,8 +1117,7 @@
     "country": "USA",
     "website": "http://www.angelfire.com/trek/tothecellar/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   },
   {
     "name": "Chartwell Booksellers",
@@ -1211,7 +1131,6 @@
     "country": "USA",
     "website": "http://www.churchillbooks.com/",
     "events": "Yes",
-    "cafe": "No",
-    "hexcolor": "#B9FCFC"
+    "cafe": "No"
   }
 ]

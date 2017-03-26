@@ -1,197 +1,193 @@
 <html>
-	<head>
-		<title>NYC Bookstores</title>
-
+    <head>
+        <title>NYC Bookstores</title>
         <meta charset='utf-8'>
-        <script type="text/javascript" src='js/jquery.js '></script>
-        <script type="text/javascript" src='js/sheetsee.js'></script>
-        <link rel="shortcut icon" href="favicon.png"/>
-
+        <script type="text/javascript" src='js/jquery.js'></script>
+        <script type="text/javascript" src='js/mustache.js'></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href='http://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' />
-        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic'>
-        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700'>
-        <link media="screen" rel="stylesheet" type="text/css" href="css/style.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+        <link href="https://fonts.googleapis.com/css?family=Acme|Lato" rel="stylesheet">
         <link media="screen" rel="stylesheet" type="text/css" href="css/site.css">
     </head>
 <body>
-	<div id="wrapper">
-		<h1>NYC Bookstores</h1>
-		<div>
-			<ul class="nav">
-				<li><strong>The Many Bookstores of New York City</strong></li>
-				<li><a href="#info">INFO</a> -</li>
-				<li><a href="http://www.github.com/deltamualpha/nyc-bookstores" target="_blank">GITHUB</a> -</li>
-				<li><a href="http://www.twitter.com/alazyreader" target="_blank">@alazyreader</a></li>
-			</ul>
-		</div>
-		<div class="container">
-			<div id="rightSide">
-				<div id="latestSpot"></div>
-				<div id="selectedSpot"></div>
-			</div>
-			<div id="map"></div>
-		</div>
-		<div id="info" class="container">
-			<p>Although the bookselling community of New York City is much depleted from its heyday, there still are independent bookstores out there. Unfortunately, there has also been a lack of resources available to discover and visit the stores that do exist. This site, while not on the level of the old guides, can help with that.</p>
-			<p>While the data here are kept up-to-date to the best of my ability, I make no promises about the accuracy of locations or other details presented. If you spot an error, or I've missed a shop, please let me know by <a href="mailto:delta.mu.alpha@gmail.com">email</a> or <a href="https://www.twitter.com/alazyreader">twitter</a>. Powered by <a href="http://jlord.github.com/sheetsee.js" target="_blank">sheetsee.js</a>; based on a project by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>.
-		</div>
-		<div class="container">
-			<input id="tableFilter" type="text" placeholder="filter by.."></input>
-			<span class="clear button">Clear</span> <span class="resetMap button">Reset Map</span>
-			<span class="noMatches">no matches</span>
-			<div id="hackSpotsTable"></div>
-		</div>
-	</div><!-- end wrapper -->
+    <div id="wrapper">
+        <h1>NYC Bookstores</h1>
+        <div>
+            <ul class="nav">
+                <li><strong>The Many Independent Bookstores of New York City</strong></li>
+                <li><a id='viewInfo'>info</a></li>
+                <li><a href="https://github.com/nyc-bookstores/nyc-bookstores.github.io" target="_blank">github</a></li>
+                <li><a href="http://www.twitter.com/alazyreader" target="_blank">@alazyreader</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div id='map'></div>
+            <div id='info'>
+                <p>Although the bookselling community of New York City is much depleted from its heyday, there still are independent bookstores out there. Unfortunately, there has also been a lack of resources available to discover and visit the stores that do exist. This site, while not on the level of the old guides, can help with that.</p>
+                <p>While the data here are kept up-to-date to the best of my ability, I make no promises about the accuracy of locations or other details presented. If you spot an error, or I've missed a shop, please let me know by <a href="mailto:delta.mu.alpha@gmail.com">email</a> or <a href="https://www.twitter.com/alazyreader">twitter</a>. Based on the "<a href="https://github.com/jlord/hack-spots">Hack Spots</a>" website by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>.
+            </div>
+            <div id='selected'></div>
+        </div>
+        
+        <div class="clearfix"></div>
 
-	<script id="hackSpotsTable" type="text/html">
-		<table>
-		<tr><th class="tHeader">Name</th><th class="tHeader">Address</th></tr>
-		  {{#rows}}
-		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}, {{city}} <a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">&#x2197;</a></td></tr>
-		  {{/rows}}
-	  </table>
-	</script>
+        <div class="container">
+            <div id="Stores"></div>
+        </div>
+    </div><!-- end wrapper -->
 
-	<script id="latestSpot" type="text/html">
-		{{#rows}}
-			<h4 class="fauxButton">MOST RECENTLY ADDED</h4>
-			<h2>{{name}}</h2>
-			<p class="colorText">{{address}}<p>
-			<p class="colorText">{{city}}, NY {{#postcode}} {{postcode}} {{/postcode}}</p>
-			<p><a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
-			<ul>
-		  	<li><span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		  	    <span class="category">Caf&eacute;:</span> {{cafe}}</li>
-		  	<li><span class="category">Website:</span> <a href='{{website}}' target="_blank">{{website}}</a></li>
-	  	</ul>
-	  	{{#description}}<ul>
-	  		<li class="description">{{description}}</li>
-	  	</ul>{{/description}}
-	  {{/rows}}
-	</script>
+    <script id="Table" type="text/html">
+        <table>
+        <tr><th class="tHeader">Name</th><th class="tHeader">Address</th></tr>
+            {{#rows}}
+                <tr id="{{rowNumber}}" class="spotRow">
+                    <td>{{name}}</td>
+                    <td>{{address}}, {{city}}</td>
+                </tr>
+            {{/rows}}
+      </table>
+    </script>
 
-	<script id="theNumberofSpots" type="text/html">
-		<p><strong><span class="red-text">{{numberOfSpots}}</span> bookstores mapped!</p>
-	</script>
+    <script id="selectedStore" type="text/html">
+        {{#store}}
+            <h2>{{name}}</h2>
+            <p class="colorText">{{address}}<p>
+            <p class="colorText">{{city}},NY {{#postcode}} {{postcode}} {{/postcode}}</p>
+            <p>
+                <a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">View in Google Maps</a>
+            </p>
+            <ul>
+                <li>
+                    <span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="category">Caf&eacute;:</span> {{cafe}}
+                </li>
+                <li><span class="category">Website:</span> <a href='{{website}}' target="_blank">{{website}}</a></li>
+            </ul>
+            {{#description}}
+                <p class="description">{{description}}</p>
+            {{/description}}
+        {{/store}}
+    </script>
 
-	<script id="selectedSpot" type="text/html">
-		{{#rows}}
-		<h4 class="fauxButton">SELECTED BOOKSTORE</h4>
-			<h2>{{name}}</h2>
-			<p class="colorText">{{address}}<p>
-			<p class="colorText">{{city}},NY {{#postcode}} {{postcode}} {{/postcode}}</p>
-			<p><a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">View in Google Maps</a></p>
-			<ul>
-		  	<li><span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		  	    <span class="category">Caf&eacute;:</span> {{cafe}}</li>
-			<li><span class="category">Website:</span> <a href='{{website}}' target="_blank">{{website}}</a></li>
-	  	</ul>
-	  	{{#description}}<ul>
-	  		<li class="description">{{description}}</li>
-	  	</ul>{{/description}}
-	  {{/rows}}
-	</script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWxhenlyZWFkZXIiLCJhIjoiY2lucDZhb2JxMHp6MHRxa2pvaTFoOWpuZyJ9.DILGYYxxt7A-A_lHHwp6tQ';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/basic-v9',
+        center: [-73.8966279, 40.7420127], // arbitrary center point
+        zoom: 10
+    });
 
-<script type="text/javascript">
-function showInfo(gData) {
-    var tableData = gData.slice(0).sort(
-        function(a, b){
-            var aname = a.name.toLowerCase();
-            var bname = b.name.toLowerCase();
-            return aname === bname ? 0 : +(aname > bname) || -1;
-        }
-    );
+    var popup = new mapboxgl.Popup({
+        closeOnClick: false,
+        closeButton: false
+    });
 
-    var tableOptions = {
-        'data': tableData,
-        'tableDiv': '#hackSpotsTable',
-        'filterDiv': '#tableFilter'
+    document.addEventListener('DOMContentLoaded', function() {
+        $.getJSON('./stores.json', function(data) {
+            data.sort(
+                function(a, b) {
+                    var aname = a.name.toLowerCase();
+                    var bname = b.name.toLowerCase();
+                    return aname === bname ? 0 : +(aname > bname) || -1;
+                }
+            )
+            $.each(data, function(key, value) { value.rowNumber = key; });
+            loadMap(data);
+        });
+    });
+
+    function boundingBox(point) {
+        // add some buffer to a point to give the user some leeway
+        return [[point.x - 5, point.y - 5], [point.x + 5, point.y + 5]]
+    }
+
+    function updateSelectedStore(store) {
+        var geometry = store.geometry ? store.geometry.coordinates : [store.long, store.lat];
+        var properties = store.properties ? store.properties : store;
+
+        map.flyTo({center: geometry});
+
+        popup.setLngLat(geometry)
+        .setHTML(properties.name)
+        .addTo(map);
+
+        $('#info').hide();
+        var template = $('#selectedStore').html();
+        var rendered = Mustache.render(template, {store: properties});
+        $('#selected').html(rendered);
+        $('#selected').show();
+    }
+
+    function showInfo() {
+        $('#selected').hide();
+        $('#info').show();
+    }
+
+    function loadMap(data) {
+        var points = [];
+        $.each(data, function(key, value) {
+            points.push({
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [value.long, value.lat]
+                },
+                "properties": value
+            });
+        });
+        map.on('load', function () {
+            map.addLayer({
+                "id": "stores",
+                "type": "circle",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": points
+                    }
+                },
+                "paint": {
+                    "circle-radius": 5,
+                    "circle-color": "#B9FCFC",
+                    "circle-stroke-width": 2,
+                    "circle-stroke-color": "#000000"
+                }
+            })
+        });
+
+        map.on('click', function (e) {
+            if (!map.getLayer('stores')) { return; }
+
+            popup.remove();
+            // Use queryRenderedFeatures to get features at a click event's point
+            var features = map.queryRenderedFeatures(boundingBox(e.point), { layers: ['stores'] });
+            // fly to the location of the click event
+            if (features.length) {
+                var store = features[0];
+                // Get coordinates from the symbol and center the map on those coordinates
+                updateSelectedStore(store);
+            }
+        });
+
+        // indicate that the symbols are clickable by changing the cursor style to 'pointer'.
+        map.on('mousemove', function (e) {
+            if (!map.getLayer('stores')) { return; }
+            var features = map.queryRenderedFeatures(boundingBox(e.point), { layers: ['stores'] });
+            map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+        });
+
+        var template = $('#Table').html();
+        var rendered = Mustache.render(template, {rows: data});
+        $('#Stores').html(rendered);
+        $("#Stores tbody tr").on("click", function() {
+            updateSelectedStore(data[$(this)[0].id]);
+        });
+
+        $('#viewInfo').on("click", showInfo);
     };
 
-    // make the table, and the search bar
-    Sheetsee.makeTable(tableOptions);
-    Sheetsee.initiateTableFilter(tableOptions);
-
-    // create geoJSON with coordinates and other
-    // useful bits from the original data
-    var optionsJSON = ['name', 'address', 'city', 'rowNumber'];
-    var geoJSON = Sheetsee.createGeoJSON(gData, optionsJSON);
-
-    // create map, tilelayer (map background), markers and popups
-    var map = Sheetsee.loadMap('map');
-    Sheetsee.addTileLayer(map, 'jllord.n7aml2bc');
-    var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, '<h2>{{ name }}</h2>');
-
-    var theLatestSpot = gData[gData.length - 1];
-    var latestSpot = Sheetsee.ich.latestSpot({
-        rows: theLatestSpot
-    });
-
-    // set it and pan to it
-    $('#latestSpot').html(latestSpot);
-    map.setView([theLatestSpot.lat, theLatestSpot.long], 14);
-
-    // when someone clicks on a row, highlight it and re-center the map
-    $('.spotRow').live('click', function() {
-        $('.spotRow').removeClass('selectedRow');
-        var rowNumber = $(this).closest('tr').attr('id');
-        $('#' + rowNumber).addClass('selectedRow');
-        var dataElement = Sheetsee.getMatches(gData, rowNumber, 'rowNumber');
-        var selectedSpot = Sheetsee.ich.selectedSpot({ rows: dataElement });
-        $('#latestSpot').css('display', 'none');
-        $('#selectedSpot').html(selectedSpot).css('display', 'inline');
-        var selectedCoords = [dataElement[0].lat, dataElement[0].long];
-        map.setView(selectedCoords, 14);
-    });
-
-    // Add click listener to the markerLayer
-    markerLayer.on('click', function(e) {
-        // clear any selected rows
-        $('.spotRow').removeClass('selectedRow');
-        // get row number of selected marker
-        var rowNumber = e.layer.feature.opts.rowNumber;
-        // find that row in the table and make consider it selected
-        $('#' + rowNumber).addClass('selectedRow');
-        // using row number, get the data for the selected spot
-        var dataElement = Sheetsee.getMatches(gData, rowNumber.toString(), 'rowNumber');
-        // take those details and re-write the selected spot section
-        var selectedSpot = Sheetsee.ich.selectedSpot({ rows: dataElement });
-        // center the map on the selected element
-        map.panTo([dataElement[0].lat, dataElement[0].long]);
-        // update the spot listing
-        $('#latestSpot').css('display', 'none');
-        $('#selectedSpot').html(selectedSpot).css('display', 'inline');
-    });
-
-    // reset the map, zoom out, and recenter on 0,0
-    $('.resetMap').click(function() {
-        $('.spotRow').removeClass('selectedRow');
-        $('#latestSpot').css('display', 'inline');
-        $('#selectedSpot').css('display', 'none');
-        map.setView([0, 0], 1);
-    });
-
-    // find total number of spots added
-    $('#theNumberofSpots').html(Sheetsee.ich.theNumberofSpots({ numberOfSpots: gData.length }));
-
-    if (window.location.hash) {
-        $('#tableFilter').val(window.location.hash.substring(1)).keyup();
-        $('.spotRow').first().click();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    $.getJSON('./stores.json', function(data) {
-        $.each(data, function(key, value) { value.rowNumber = key; });
-        showInfo(data);
-    });
-});
-
-$(document).on('keyup', '#tableFilter', function() {
-    window.location.hash = $(this).val();
-    $('.spotRow').first().click();
-});
-</script>
+    </script>
 </body>
 </html>
