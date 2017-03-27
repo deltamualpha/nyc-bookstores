@@ -1,6 +1,6 @@
 /* Page Specific CSS */
 
-body {font-family: 'Lato', sans-serif; background: #fff; color: #333; font-size: 16px; border: 52px #F8F8F8 solid; margin: 0px; padding: 20px 20px 20px 20px;}
+body {font-family: 'Lato', sans-serif; background: #fff; color: #333; font-size: 16px;margin: 0px; padding: 20px 20px 20px 20px;}
 h1 {font-size: 80px; font-family: 'Acme', sans-serif; font-weight: normal; margin: 0px;}
 h2 {font-size: 40px; font-family: 'Acme', sans-serif; font-weight: normal; margin: 0px 0px;}
 h3 {font-family: 'Acme', sans-serif; font-size: 30px; margin: 10px 0px;}
