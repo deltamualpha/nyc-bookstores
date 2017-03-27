@@ -161,6 +161,7 @@
                     "circle-stroke-color": "#000000"
                 }
             })
+            map.addControl(new mapboxgl.NavigationControl(), 'top-left');
         });
 
         map.on('click', function (e) {

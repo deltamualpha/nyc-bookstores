@@ -1,6 +1,6 @@
 /* Page Specific CSS */
 
-body {font-family: 'Lato', sans-serif; background: #fff; color: #333; font-size: 16px;margin: 0px; padding: 20px 20px 20px 20px;}
+body {font-family: 'Lato', sans-serif; background: #fff; color: #333; font-size: 16px; margin: 0px; padding: 20px 20px 20px 20px;}
 h1 {font-size: 80px; font-family: 'Acme', sans-serif; font-weight: normal; margin: 0px;}
 h2 {font-size: 40px; font-family: 'Acme', sans-serif; font-weight: normal; margin: 0px 0px;}
 h3 {font-family: 'Acme', sans-serif; font-size: 30px; margin: 10px 0px;}
@@ -13,11 +13,7 @@ small {padding: 10px 0px; font-size: 10px;}
 p {margin: 0px; padding: 0px; font-size: 12px;}
 li {line-height: 19px; font-size: 12px;}
 ol {line-height: 24px;}
-a.button {border: none;}
 .clearfix {clear: both;}
-
-pre {word-wrap: break-word; padding: 14px; background: #F0F0F0; }
-code {font-family: "Consolas", "Ubuntu Mono", monospace; line-height: 22px; font-size: 13px; color: #636363; font-weight: normal;}
 
 #map {height: 500px; width: 450px; min-width: 300px; background: #FFFFFF; float: left;}
 #map a {border: none;}
@@ -33,8 +29,6 @@ ul.nav li a:hover {border-bottom: 1px #FD9393 solid;}
 
 #wrapper {margin: 0px auto; padding: 40px; max-width: 900px}
 
-.button {padding: 5px 5px; background-color: #BEBEBE; font-size: 10px; color: #fff;}
-.button:hover {background: #B9FCFC; color: #47CCFC;}
 .colorText {color: #FF4646; text-transform: uppercase; font-weight: 700;}
 
 #selected {max-width: 400px; width: 100%; float: left; padding: 5px 10px;}
