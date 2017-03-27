@@ -51,7 +51,7 @@
         <tr><th class="tHeader">Name</th><th class="tHeader">Address</th></tr>
             {{#rows}}
                 <tr id="{{rowNumber}}" class="spotRow">
-                    <td>{{name}}</td>
+                    <td class="name">{{name}}</td>
                     <td>{{address}}, {{city}}</td>
                 </tr>
             {{/rows}}
@@ -87,7 +87,10 @@
         container: 'map',
         style: 'mapbox://styles/mapbox/basic-v9',
         center: [-73.8966279, 40.7420127], // arbitrary center point
-        zoom: 10
+        zoom: 10,
+        minZoom: 9,
+        maxZoom: 17,
+        dragRotate: false
     });
 
     var popup = new mapboxgl.Popup({
