@@ -137,6 +137,8 @@
     }
 
     function loadMap(data) {
+        var geolocate = new mapboxgl.GeolocateControl();
+
         var points = [];
         $.each(data, function(key, value) {
             points.push({
@@ -167,6 +169,7 @@
                 }
             })
             map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+            map.addControl(geolocate, 'top-right');
         });
 
         map.on('click', function (e) {
@@ -189,6 +192,13 @@
             var features = map.queryRenderedFeatures(boundingBox(e.point), { layers: ['stores'] });
             map.getCanvas().style.cursor = features.length ? 'pointer' : '';
         });
+
+        geolocate.on('geolocate', function (e) {
+            map.setZoom(14);
+            popup.setLngLat([e.coords.longitude, e.coords.latitude])
+            .setHTML('Current Location')
+            .addTo(map);
+        })
 
         var template = $('#Table').html();
         var rendered = Mustache.render(template, {rows: data});
