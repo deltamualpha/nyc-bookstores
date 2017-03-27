@@ -203,7 +203,7 @@
         geolocate.on('error', function (e) {
             map.setZoom(10);
             popup.setLngLat([-73.8966279, 40.7420127])
-            .setHTML('debug')
+            .setHTML(e.message)
             .addTo(map);
         });
 
