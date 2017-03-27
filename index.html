@@ -169,7 +169,9 @@
                 }
             })
             map.addControl(new mapboxgl.NavigationControl(), 'top-left');
-            map.addControl(geolocate, 'top-right');
+            if(navigator.geolocation) {
+                map.addControl(geolocate, 'top-right');
+            }
         });
 
         map.on('click', function (e) {
@@ -197,13 +199,6 @@
             map.setZoom(14);
             popup.setLngLat([e.coords.longitude, e.coords.latitude])
             .setHTML('Current Location')
-            .addTo(map);
-        });
-
-        geolocate.on('error', function (e) {
-            map.setZoom(10);
-            popup.setLngLat([-73.8966279, 40.7420127])
-            .setHTML(e.message)
             .addTo(map);
         });
 
