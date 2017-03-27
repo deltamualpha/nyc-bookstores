@@ -840,20 +840,6 @@
     "cafe": "No"
   },
   {
-    "name": "La Casa Azul Bookstore",
-    "address": "143 E. 103rd Street",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10029",
-    "description": "",
-    "lat": "40.790561",
-    "long": "-73.947923",
-    "country": "USA",
-    "website": "http://www.lacasaazulbookstore.com/",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "Topos Bookstore Cafe",
     "address": "788 Woodward Ave",
     "city": "Brooklyn",
