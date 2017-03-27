@@ -29,12 +29,12 @@ ul.nav li a:hover {border-bottom: 1px #FD9393 solid;}
 
 #wrapper {margin: 0px auto; padding: 40px; max-width: 900px}
 
-.colorText {color: #FF4646; text-transform: uppercase; font-weight: 700;}
+.address {color: #FF4646; text-transform: uppercase; font-weight: 700;}
 
 #selected {max-width: 400px; width: 100%; float: left; padding: 5px 10px;}
 #selected .description {font-size: 14px; padding: 4px; line-height: 19px; font-weight: 300; max-width: 530px; min-width: 300px; }
 #info {max-width: 400px; width: 100%; float: left; padding: 5px 10px;}
-.category {text-transform: uppercase; font-size: 9px; letter-spacing: .2em; padding-right: 6px;}
+.store-details {text-transform: uppercase; font-size: 11px; letter-spacing: .1em; padding-right: 6px;}
 
 #viewInfo {cursor: pointer;}
 #info p {font-size: 14px; padding: 4px; line-height: 19px; font-weight: 300; max-width: 530px; min-width: 300px; }

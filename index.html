@@ -61,17 +61,19 @@
     <script id="selectedStore" type="text/html">
         {{#store}}
             <h2>{{name}}</h2>
-            <p class="colorText">{{address}}<p>
-            <p class="colorText">{{city}},NY {{#postcode}} {{postcode}} {{/postcode}}</p>
+            <p class="address">{{address}}<p>
+            <p class="address">{{city}},NY {{#postcode}} {{postcode}} {{/postcode}}</p>
             <p>
                 <a href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},NY" target="_blank">View in Google Maps</a>
             </p>
             <ul>
                 <li>
-                    <span class="category">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="category">Caf&eacute;:</span> {{cafe}}
+                    <span class="store-details">Events:</span> {{events}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="store-details">Caf&eacute;:</span> {{cafe}}
                 </li>
-                <li><span class="category">Website:</span> <a href='{{website}}' target="_blank">{{website}}</a></li>
+                {{#website}}
+                    <li><span class="store-details">Website:</span> <a href='{{website}}' target="_blank">{{website}}</a></li>
+                {{/website}}
             </ul>
             {{#description}}
                 <p class="description">{{description}}</p>
