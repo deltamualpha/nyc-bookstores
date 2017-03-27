@@ -56,20 +56,6 @@
     "cafe": "No"
   },
   {
-    "name": "Enigma Bookstore",
-    "address": "33-17 Crescent St",
-    "city": "Astoria",
-    "state": "NY",
-    "postcode": "11106",
-    "description": "A specialty bookstore concentrating on science-fiction, fantasy, and horror, and it has a deep selection of local small-press and self-published genre titles. A small selection of childrens and non-genre titles are also available.",
-    "lat": "40.762251",
-    "long": "-73.929153",
-    "country": "USA",
-    "website": "https://www.facebook.com/pages/Enigma-Bookstore/138243176369174",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "PowerHouse Arena",
     "address": "28 Adams St",
     "city": "Brooklyn",
