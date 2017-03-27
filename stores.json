@@ -224,20 +224,6 @@
     "cafe": "No"
   },
   {
-    "name": "P.S. Bookshop",
-    "address": "76 Front St",
-    "city": "Brooklyn",
-    "state": "NY",
-    "postcode": "11201",
-    "description": "This large, high-ceilinged space has a large selection of art and photography books, as well as a deep used childrens book section and literary fiction. They also sell literary magazines and a small selection of art prints, cards, and a handful of records.",
-    "lat": "40.7023163",
-    "long": "-73.9897512",
-    "country": "USA",
-    "website": "http://www.psbnyc.com/",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "Loft Book Store Cafe",
     "address": "350 Tompkins Ave",
     "city": "Brooklyn",
