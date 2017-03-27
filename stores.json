@@ -728,20 +728,6 @@
     "cafe": "No"
   },
   {
-    "name": "Black Sea Book Store",
-    "address": "3175 Coney Island Ave",
-    "city": "Brooklyn",
-    "state": "NY",
-    "postcode": "11235",
-    "description": "Russian bookstore?",
-    "lat": "40.57857",
-    "long": "-73.95945",
-    "country": "USA",
-    "website": "",
-    "events": "?",
-    "cafe": "?"
-  },
-  {
     "name": "PowerHouse on 8th",
     "address": "1111 8th Ave",
     "city": "Brooklyn",
