@@ -402,6 +402,20 @@
     "long": "-73.965188",
     "country": "USA",
     "website": "http://www.bookculture.com/",
+    "events": "No",
+    "cafe": "No"
+  },
+  {
+    "name": "Book Culture on Columbus",
+    "address": "450 Columbus Ave",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10024",
+    "description": "",
+    "lat": "40.783776",
+    "long": "-73.9745324",
+    "country": "USA",
+    "website": "http://www.bookculture.com/",
     "events": "Yes",
     "cafe": "No"
   },
