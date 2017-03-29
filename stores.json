@@ -1076,5 +1076,19 @@
     "website": "http://www.churchillbooks.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Bookoff",
+    "address": "49 W 45nd St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10036",
+    "description": "",
+    "lat": "40.756383",
+    "long": "-73.981412",
+    "country": "USA",
+    "website": "http://www.bookoffusa.com/?cmd=store&shop=newyork",
+    "events": "No",
+    "cafe": "No"
   }
 ]
