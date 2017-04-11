@@ -141,13 +141,13 @@
   },
   {
     "name": "Ursus Books",
-    "address": "699 Madison Ave., 3rd Floor",
+    "address": "50 East 78th St, Suite 1C",
     "city": "New York",
     "state": "NY",
     "postcode": "10065",
     "description": "Situated on the third floor, Ursus is a specialty bookstore with a selection of new and out-of-print art books, as well as an entire room devoted to rare titles. Ride the elevator up and buzz in to meet with the friendly staff and browse the shelves.",
-    "lat": "40.765678",
-    "long": "-73.969706",
+    "lat": "40.775248",
+    "long": "-73.962207",
     "country": "USA",
     "website": "http://www.ursusbooks.com/",
     "events": "No",
@@ -1117,6 +1117,20 @@
     "long": "-73.94571",
     "country": "USA",
     "website": "http://www.spoonbillbooks.com/category-s/146.htm",
+    "events": "No",
+    "cafe": "No"
+  },
+  {
+    "name": "James Cummins Bookseller",
+    "address": "699 Madison Ave, 7th Floor",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10065",
+    "description": "",
+    "lat": "40.7655629",
+    "long": "-73.9718578",
+    "country": "USA",
+    "website": "https://www.jamescumminsbookseller.com/",
     "events": "No",
     "cafe": "No"
   }
