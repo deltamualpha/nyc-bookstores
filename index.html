@@ -6,6 +6,7 @@
         <link rel="apple-touch-icon" href="/img/social.jpg" />
         <script type="text/javascript" src='js/jquery.js'></script>
         <script type="text/javascript" src='js/mustache.js'></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
@@ -110,18 +111,63 @@
                     return aname === bname ? 0 : +(aname > bname) || -1;
                 }
             )
-            $.each(data, function(key, value) { value.rowNumber = key; });
+            $.each(data, function(key, value) {
+                value.rowNumber = key;
+                value.slug = slugify(value.name);
+            });
             $('#storeCount').html(data.length);
+            window.data = data;
             loadMap(data);
         });
     });
+
+    window.addEventListener("hashchange", function(e){
+        updateViewBySlug(e.newURL.split('#')[1]);
+    }, false);
+
+    function updateHash(slug) {
+        history.pushState(null, null, "#" + slug);
+    }
+
+    function slugify(str) {
+        return str
+            .toLowerCase()
+            .replace(/&/g,' and ')
+            .replace(/ /g,'-')
+            .replace(/[']+/g,'')
+            .replace(/[^\w-]+/g,'-')
+            .replace(/-+/g,'-')
+            .replace(/^-|-$/g,'');
+    }
+
+    function getStoreBySlug(slug) {
+        var ret = false;
+        $.each(window.data, function(key, value) {
+            if (value.slug === slug) {
+                ret = value;
+                return false;
+            }
+        });
+        return ret;
+    }
+
+    function updateViewBySlug(slug) {
+        if (slug === "info" || slug === undefined) {
+            showInfo(false);
+        } else {
+            var store = getStoreBySlug(slug);
+            if (store) {
+                updateSelectedStore(store, false);
+            }
+        }
+    }
 
     function boundingBox(point) {
         // add some buffer to a point to give the user some leeway
         return [[point.x - 5, point.y - 5], [point.x + 5, point.y + 5]]
     }
 
-    function updateSelectedStore(store) {
+    function updateSelectedStore(store, pushState=false) {
         map.flyTo({center: [store.long, store.lat]});
 
         popup.setLngLat([store.long, store.lat])
@@ -133,11 +179,17 @@
         var rendered = Mustache.render(template, {store: store});
         $('#selected').html(rendered);
         $('#selected').show();
+        if (pushState) {
+            updateHash(store.slug);
+        }
     }
 
-    function showInfo() {
+    function showInfo(pushState=true) {
         $('#selected').hide();
         $('#info').show();
+        if (pushState) {
+            updateHash('info');
+        }
     }
 
     function loadMap(data) {
@@ -176,6 +228,7 @@
             if(navigator.geolocation) {
                 map.addControl(geolocate, 'top-right');
             }
+            updateViewBySlug(window.location.hash.split("#")[1]);
         });
 
         map.on('click', function (e) {
@@ -188,7 +241,7 @@
             if (features.length) {
                 var store = features[0];
                 // Get coordinates from the symbol and center the map on those coordinates
-                updateSelectedStore(store.properties);
+                updateSelectedStore(store.properties, true);
             }
         });
 
@@ -209,8 +262,9 @@
         var template = $('#Table').html();
         var rendered = Mustache.render(template, {rows: data});
         $('#Stores').html(rendered);
-        $("#Stores tbody tr").on("click", function() {
-            updateSelectedStore(data[$(this)[0].id]);
+        $("#Stores tbody tr").not(':first').on("click", function() {
+            updateSelectedStore(data[$(this)[0].id], true);
+            $(window).scrollTo($("#selected"), 250, {offset: {top: -15}});
         });
 
         $('#viewInfo').on("click", showInfo);
