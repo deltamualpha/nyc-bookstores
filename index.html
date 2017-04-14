@@ -187,6 +187,7 @@
 
     function showInfo(pushState=true) {
         $('#selected').hide();
+        popup.remove();
         $('#info').show();
         if (pushState) {
             updateHash('info');
