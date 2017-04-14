@@ -132,6 +132,7 @@
     function slugify(str) {
         return str
             .toLowerCase()
+            .replace(/é/g,'e')
             .replace(/&/g,' and ')
             .replace(/ /g,'-')
             .replace(/[']+/g,'')
