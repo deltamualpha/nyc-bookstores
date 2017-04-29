@@ -1132,5 +1132,19 @@
     "website": "https://www.jamescumminsbookseller.com/",
     "events": "No",
     "cafe": "No"
+  },
+  {
+    "name": "Books Are Magic",
+    "address": "225 Smith St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11231",
+    "description": "",
+    "lat": "40.6839938",
+    "long": "-73.9920653",
+    "country": "USA",
+    "website": "https://www.booksaremagic.net/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
