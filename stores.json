@@ -1160,5 +1160,33 @@
     "website": "http://www.albertine.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Clic Bookstore & Gallery",
+    "address": "255 Centre St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10013",
+    "description": "",
+    "lat": "40.7206824",
+    "long": "-73.9979434",
+    "country": "USA",
+    "website": "http://www.clic.com/",
+    "events": "Yes",
+    "cafe": "No"
+  },
+  {
+    "name": "TASCHEN",
+    "address": "107 Greene St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10012",
+    "description": "",
+    "lat": "40.7246706",
+    "long": "-73.9998554",
+    "country": "USA",
+    "website": "https://www.taschen.com/pages/en/stores/979.store_new_york.htm",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
