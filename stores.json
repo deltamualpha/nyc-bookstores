@@ -1132,5 +1132,19 @@
     "website": "https://www.booksaremagic.net/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Namaste Bookshop",
+    "address": "2 W 14th St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10011",
+    "description": "",
+    "lat": "40.736063",
+    "long": "-73.994014",
+    "country": "USA",
+    "website": "http://http://www.namastebookshop.com//",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
