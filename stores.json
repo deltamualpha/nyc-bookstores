@@ -1143,7 +1143,21 @@
     "lat": "40.736063",
     "long": "-73.994014",
     "country": "USA",
-    "website": "http://http://www.namastebookshop.com//",
+    "website": "http://www.namastebookshop.com/",
+    "events": "Yes",
+    "cafe": "No"
+  },
+  {
+    "name": "Albertine Books",
+    "address": "972 Fifth Ave",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10075",
+    "description": "",
+    "lat": "40.7765972",
+    "long": "-73.9637784",
+    "country": "USA",
+    "website": "http://www.albertine.com/",
     "events": "Yes",
     "cafe": "No"
   }
