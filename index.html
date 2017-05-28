@@ -1,28 +1,27 @@
-<html>
-    <head>
+<html><head>
         <title>NYC Bookstores</title>
-        <meta charset='utf-8'>
-        <meta name="google-site-verification" content="hEfog9h0E3JQW91ZUZM5ayPb6DND0WbUa2_W8yTIuVw" />
-        <link rel="icon" type="image/png" href="/img/favicon.png" />
-        <link rel="apple-touch-icon" href="/img/social.jpg" />
-        <script type="text/javascript" src='js/jquery.js'></script>
-        <script type="text/javascript" src='js/mustache.js'></script>
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="hEfog9h0E3JQW91ZUZM5ayPb6DND0WbUa2_W8yTIuVw">
+        <link rel="icon" type="image/png" href="/img/favicon.png">
+        <link rel="apple-touch-icon" href="/img/social.jpg">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/mustache.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Acme|Lato" rel="stylesheet">
         <link media="screen" rel="stylesheet" type="text/css" href="css/site.css">
-        <meta property="description" content="A Guide To The Many Independent Bookstores Of New York City" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="www.nycbookstores.org" />
-        <meta name="twitter:title" content="NYC Bookstores" />
-        <meta name="twitter:description" content="A Guide To The Many Independent Bookstores Of New York City" />
-        <meta name="twitter:image" content="http://www.nycbookstores.org/img/social.jpg" />
-        <meta property="og:url" content="http://www.nycbookstores.org/" />
-        <meta property="og:title" content="NYC Bookstores" />
-        <meta property="og:description" content="A Guide To The Many Independent Bookstores Of New York City" />
-        <meta property="og:image" content="http://www.nycbookstores.org/img/social.jpg" />
+        <meta property="description" content="A Guide To The Many Independent Bookstores Of New York City">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="www.nycbookstores.org">
+        <meta name="twitter:title" content="NYC Bookstores">
+        <meta name="twitter:description" content="A Guide To The Many Independent Bookstores Of New York City">
+        <meta name="twitter:image" content="http://www.nycbookstores.org/img/social.jpg">
+        <meta property="og:url" content="http://www.nycbookstores.org/">
+        <meta property="og:title" content="NYC Bookstores">
+        <meta property="og:description" content="A Guide To The Many Independent Bookstores Of New York City">
+        <meta property="og:image" content="http://www.nycbookstores.org/img/social.jpg">
     </head>
 <body>
     <div id="wrapper">
@@ -30,25 +29,369 @@
         <div>
             <ul class="nav">
                 <li><strong>The Many Independent Bookstores of New York City</strong></li>
-                <li><a id='viewInfo'>info</a></li>
+                <li><a id="viewInfo">info</a></li>
                 <li><a href="https://github.com/nyc-bookstores/nyc-bookstores.github.io" target="_blank">github</a></li>
                 <li><a href="http://www.twitter.com/alazyreader" target="_blank">@alazyreader</a></li>
             </ul>
         </div>
         <div class="container">
-            <div id='map'></div>
-            <div id='info'>
+            <div id="map"></div>
+            <div id="info">
                 <p>New York City loves its bookstores. We <a href="http://www.nytimes.com/2006/10/15/nyregion/thecity/15book.html" target="_blank">eulogize those that have faded</a> and celebrate when new ventures are launched. And while the historic <a href="http://untappedcities.com/2015/08/26/4th-avenue-the-history-of-nycs-book-row/" target="_blank">Book Row may have passed away in the 80s</a>, there are still plenty of stores dotting the map. Here, I have attempted to map out all of the currently-open general-interest independent booksellers in the city. Any store with regular-ish hours (excluding religious booksellers and appointment-only rare book sellers) is included.</p>
-                <p>The listings here are kept up-to-date to the best of my ability. However, I make no promises about either the accuracy or reliability of the information. If you spot an error, or I've missed a shop, please let me know by <a href="mailto:delta.mu.alpha@gmail.com" target="_blank">email</a> or <a href="https://www.twitter.com/alazyreader" target="_blank">twitter</a>. Based on the "<a href="https://github.com/jlord/hack-spots" target="_blank">Hack Spots</a>" website by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>.</p>
+                <p>The listings here are kept up-to-date to the best of my ability. However, I make no promises about either the accuracy or reliability of the information. If you spot an error, or I&apos;ve missed a shop, please let me know by <a href="mailto:delta.mu.alpha@gmail.com" target="_blank">email</a> or <a href="https://www.twitter.com/alazyreader" target="_blank">twitter</a>. Based on the &quot;<a href="https://github.com/jlord/hack-spots" target="_blank">Hack Spots</a>&quot; website by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>.</p>
                 <p>There are currently <span id="storeCount"></span> stores indexed on this page.</p>
             </div>
-            <div id='selected'></div>
+            <div id="selected"></div>
         </div>
         
         <div class="clearfix"></div>
 
         <div class="container">
-            <div id="Stores"></div>
+            <div id="Stores">
+        <table>
+        <tbody><tr><th class="tHeader">Name</th><th class="tHeader">Address</th></tr>
+                <tr id="" class="spotRow">
+                    <td class="name">192 Books</td>
+                    <td>192 10th Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Alabaster Bookshop</td>
+                    <td>122 4th Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Albertine Books</td>
+                    <td>972 Fifth Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Archestratus</td>
+                    <td>160 Huron St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Argosy Books</td>
+                    <td>116 East 59th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Astoria Bookshop</td>
+                    <td>31-29 31st St, Astoria</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Bankstreet Bookstore</td>
+                    <td>2780 Broadway, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Ben&apos;s Books</td>
+                    <td>145 Ainslie St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Berl&apos;s Brooklyn Poetry Shop</td>
+                    <td>126A Front St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Better Read Than Dead</td>
+                    <td>867 Broadway, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Bluestockings</td>
+                    <td>172 Allen Street, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Bonnie Slotnick Cookbooks</td>
+                    <td>28 East 2nd St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Book Culture</td>
+                    <td>536 W 112th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Book Culture on Broadway</td>
+                    <td>2915 Broadway, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Book Culture on Columbus</td>
+                    <td>450 Columbus Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Book Thug Nation</td>
+                    <td>100 North 3rd St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">bookbook</td>
+                    <td>266 Bleecker St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Bookmarc</td>
+                    <td>400 Bleecker St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">BookMark Shoppe</td>
+                    <td>8415 3rd Avenue, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Bookoff</td>
+                    <td>49 W 45nd St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Books Are Magic</td>
+                    <td>225 Smith St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Books Of Wonder</td>
+                    <td>18 West 18th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Boulevard Books and Caf&#xE9;</td>
+                    <td>7518 13th Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Catland</td>
+                    <td>987 Flushing Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Chartwell Booksellers</td>
+                    <td>55 E 52nd St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Civil Service Book Shop</td>
+                    <td>38 Lispenard St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Clic Bookstore &amp; Gallery</td>
+                    <td>255 Centre St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Community Bookstore</td>
+                    <td>143 7th Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Dashwood Books</td>
+                    <td>33 Bond St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Desert Island Comics</td>
+                    <td>540 Metropolitan Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">East Village Books</td>
+                    <td>99 St. Mark&apos;s Place, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Every Thing Goes Book Cafe and Neighborhood Stage</td>
+                    <td>208 Bay St, Staten Island</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Freebird Books</td>
+                    <td>123 Columbia St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Greenlight Bookstore</td>
+                    <td>686 Fulton St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Here&apos;s A Book Store</td>
+                    <td>1964 Coney Island Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Housing Works Bookstore Caf&#xE9;</td>
+                    <td>126 Crosby St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Hullabaloo Books</td>
+                    <td>711A Franklin Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Human Relations Books</td>
+                    <td>1067 Flushing Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Idlewild Books Brooklyn</td>
+                    <td>249 Warren St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Idlewild Books Manhattan</td>
+                    <td>12 West 19th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Idlewild Books Williamsburg</td>
+                    <td>218 Bedford Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">James Cummins Bookseller</td>
+                    <td>699 Madison Ave, 7th Floor, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Joanne Hendricks Cookbooks</td>
+                    <td>488 Greenwich St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Kinokunya</td>
+                    <td>1073 Avenue of the Americas, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Kitchen Arts &amp; Letters</td>
+                    <td>1435 Lexington Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Loft Book Store Cafe</td>
+                    <td>350 Tompkins Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Logos Bookstore</td>
+                    <td>1575 York Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Mast Books</td>
+                    <td>66 Avenue A, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">McNally Jackson Books</td>
+                    <td>52 Prince St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Melville House Publishers</td>
+                    <td>46 John St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Mercer Street Books &amp; Records</td>
+                    <td>206 Mercer St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Molasses Books</td>
+                    <td>770 Hart St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Namaste Bookshop</td>
+                    <td>2 W 14th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Pioneer Books</td>
+                    <td>289 Van Brunt St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Posman Books Chelsea Market</td>
+                    <td>75 9th Avenue, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Posman Books Rockefeller Center</td>
+                    <td>30 Rockefeller Plaza, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">PowerHouse Arena</td>
+                    <td>28 Adams St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">PowerHouse on 8th</td>
+                    <td>1111 8th Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Printed Matter</td>
+                    <td>195 10th Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Quest Bookshop</td>
+                    <td>240 E 53rd St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Respect For Life Books-N-Things</td>
+                    <td>537 Nostrand Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Revolution Books</td>
+                    <td>437 Malcolm X Blvd, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Shakespeare &amp; Company</td>
+                    <td>939 Lexington Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Sister&apos;s Uptown Bookstore</td>
+                    <td>1942 Amsterdam Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Spoonbill</td>
+                    <td>99 Montrose Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Spoonbill &amp; Sugartown, Booksellers</td>
+                    <td>218 Bedford Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Stories</td>
+                    <td>458 Bergen St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Strand Bookstore</td>
+                    <td>828 Broadway, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">TASCHEN</td>
+                    <td>107 Greene St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Terrace Books</td>
+                    <td>242 Prospect Park West, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">The Austin Book Shop</td>
+                    <td>104-29 Jamaica Ave, Richmond Hill</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">The Book Cellar</td>
+                    <td>1465 York Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">The Center for Fiction</td>
+                    <td>17 East 47th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">The Corner Bookstore</td>
+                    <td>1313 Madison Ave, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">The Drama Book Shop</td>
+                    <td>250 West 40th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">The Mysterious Bookshop</td>
+                    <td>58 Warren St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Three Lives &amp; Company</td>
+                    <td>154 West 10th St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Topos Bookstore Cafe</td>
+                    <td>788 Woodward Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Turn The Page... Again</td>
+                    <td>39-15a Bell Blvd, Flushing</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Unnameable Books</td>
+                    <td>600 Vanderbilt Ave, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Unoppressive Non-Imperialist Bargain Books</td>
+                    <td>34 Carmine St, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Ursus Books</td>
+                    <td>50 East 78th St, Suite 1C, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Westsider Rare &amp; Used Books</td>
+                    <td>2246 Broadway, New York</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Word Bookstore</td>
+                    <td>126 Franklin St, Brooklyn</td>
+                </tr>
+                <tr id="" class="spotRow">
+                    <td class="name">Word Up Books</td>
+                    <td>2113 Amsterdam Ave, New York</td>
+                </tr>
+        </tbody></table>
+    </div>
         </div>
     </div><!-- end wrapper -->
 
@@ -273,5 +616,6 @@
     };
 
     </script>
-</body>
-</html>
+
+
+</body></html>

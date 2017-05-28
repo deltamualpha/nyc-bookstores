@@ -1,0 +1,19 @@
+{
+  "name": "nyc-bookstores",
+  "version": "1.0.0",
+  "description": "This is the code for a website that lists bookstores in New York City.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nyc-bookstores/nyc-bookstores.github.io.git"
+  },
+  "author": "David Ashby <delta.mu.alpha@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/nyc-bookstores/nyc-bookstores.github.io/issues"
+  },
+  "homepage": "https://github.com/nyc-bookstores/nyc-bookstores.github.io",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1"
+  }
+}
