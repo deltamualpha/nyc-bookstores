@@ -1216,5 +1216,19 @@
     "website": "http://www.brazenheadbooks.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Standards Manual",
+    "address": "212 Franklin Street",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11217",
+    "description": "",
+    "lat": "40.732919",
+    "long": "-73.957943",
+    "country": "USA",
+    "website": "https://standardsmanual.com/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
