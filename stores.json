@@ -1230,5 +1230,19 @@
     "website": "https://standardsmanual.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Westsider Records",
+    "address": "233 West 72nd St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10023",
+    "description": "",
+    "lat": "40.7793372",
+    "long": "-73.9827287",
+    "country": "USA",
+    "website": "http://westsiderbooks.com/recordstore.html",
+    "events": "No",
+    "cafe": "No"
   }
 ]
