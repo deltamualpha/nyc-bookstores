@@ -1244,5 +1244,19 @@
     "website": "http://westsiderbooks.com/recordstore.html",
     "events": "No",
     "cafe": "No"
+  },
+  {
+    "name": "Books Of Wonder (Upper West Side)",
+    "address": "217 West 84th St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10024",
+    "description": "",
+    "lat": "40.7870214",
+    "long": "-73.977082",
+    "country": "USA",
+    "website": "http://booksofwonder.com/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
