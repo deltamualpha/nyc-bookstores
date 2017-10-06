@@ -1258,5 +1258,19 @@
     "website": "http://booksofwonder.com/",
     "events": "Yes",
     "cafe": "No"
+  }, 
+  {
+    "name": "Kew & Willow Books",
+    "address": "81-63 Lefferts Boulevard",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "11415",
+    "description": "Only open weekends.",
+    "lat": "40.707817",
+    "long": "-73.830775",
+    "country": "USA",
+    "website": "http://www.thequeensbookshop.com/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
