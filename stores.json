@@ -196,6 +196,20 @@
     "cafe": "No"
   },
   {
+    "name": "Greenlight Bookstore (Prospect Lefferts Gardens)",
+    "address": "632 Flatbush Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11225",
+    "description": "",
+    "lat": "40.657927",
+    "long": "-73.960535",
+    "country": "USA",
+    "website": "http://www.greenlightbookstore.com/",
+    "events": "Yes",
+    "cafe": "No"
+  },
+  {
     "name": "Loft Book Store Cafe",
     "address": "350 Tompkins Ave",
     "city": "Brooklyn",
