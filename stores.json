@@ -1272,7 +1272,7 @@
     "website": "http://booksofwonder.com/",
     "events": "Yes",
     "cafe": "No"
-  }, 
+  },
   {
     "name": "Kew & Willow Books",
     "address": "81-63 Lefferts Boulevard",
@@ -1286,5 +1286,19 @@
     "website": "http://www.thequeensbookshop.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Cafe con Libros",
+    "address": "724 Prospect Place",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11216",
+    "description": "",
+    "lat": "40.674410",
+    "long": "-73.952515",
+    "country": "USA",
+    "website": "http://www.cafeconlibrosbk.com/",
+    "events": "Yes",
+    "cafe": "Yes"
   }
 ]
