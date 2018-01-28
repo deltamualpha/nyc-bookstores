@@ -1300,5 +1300,19 @@
     "website": "http://www.cafeconlibrosbk.com/",
     "events": "Yes",
     "cafe": "Yes"
+  },
+  {
+    "name": "McNally Jackson Books Williamsburg",
+    "address": "76 North 4th St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11249",
+    "description": "",
+    "lat": "40.717322",
+    "long": "-73.961595",
+    "country": "USA",
+    "website": "http://www.mcnallyjackson.com/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
