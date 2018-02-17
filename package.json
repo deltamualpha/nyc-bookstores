@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/nyc-bookstores/nyc-bookstores.github.io",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.1"
+    "cheerio": "^1.0.0-rc.2"
   }
 }
