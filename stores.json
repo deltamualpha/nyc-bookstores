@@ -1314,5 +1314,19 @@
     "website": "http://www.mcnallyjackson.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Codex Books",
+    "address": "1 Bleecker St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10012",
+    "description": "",
+    "lat": "40.725404",
+    "long": "-73.9925904",
+    "country": "USA",
+    "website": "http://codexbooks.info/",
+    "events": "Yes",
+    "cafe": "Yes"
   }
 ]
