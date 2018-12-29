@@ -1328,5 +1328,19 @@
     "website": "http://codexbooks.info/",
     "events": "Yes",
     "cafe": "Yes"
+  },
+  {
+    "name": "Cooking, Cocktails, and Culture",
+    "address": "212 Degraw Street",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11231",
+    "description": "",
+    "lat": "40.684676",
+    "long": "-73.998902",
+    "country": "USA",
+    "website": "https://lizzyoungbookseller.com/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
