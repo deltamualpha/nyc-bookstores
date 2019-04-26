@@ -910,20 +910,6 @@
     "cafe": "No"
   },
   {
-    "name": "The Drama Book Shop",
-    "address": "250 West 40th St",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10018",
-    "description": "In one form or another, the Drama Book Shop has been in New York City for a hundred years. It sells plays (of course), but also musical songbooks, books on acting and writing plays/movies, and non-fiction on the history of Broadway and New York City. There's a cute store dog (a pomeranian) named Chester who's often in the store as well. Also of note is the return policy: there isn't one. Due to the nature of plays (and, presumably, broke actors buying plays, memorizing monologues, and trying to return them), all sales are final.",
-    "lat": "40.755324",
-    "long": "-73.989823",
-    "country": "USA",
-    "website": "http://www.dramabookshop.com/",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "Catland",
     "address": "987 Flushing Ave",
     "city": "Brooklyn",
@@ -1279,11 +1265,11 @@
     "city": "New York",
     "state": "NY",
     "postcode": "11415",
-    "description": "Only open weekends.",
+    "description": "",
     "lat": "40.707817",
     "long": "-73.830775",
     "country": "USA",
-    "website": "http://www.thequeensbookshop.com/",
+    "website": "https://www.kewandwillow.com/",
     "events": "Yes",
     "cafe": "No"
   },
@@ -1342,5 +1328,33 @@
     "website": "https://lizzyoungbookseller.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "The Lit. Bar",
+    "address": "131 Alexander Ave",
+    "city": "Bronx",
+    "state": "NY",
+    "postcode": "10454",
+    "description": "",
+    "lat": "40.80721",
+    "long": "-73.9275679",
+    "country": "USA",
+    "website": "http://www.thelitbar.com/",
+    "events": "Yes",
+    "cafe": "Yes"
+  },
+  {
+    "name": "Shakespeare & Company (Upper West Side)",
+    "address": "2020 Broadway",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10023",
+    "description": "",
+    "lat": "40.776484",
+    "long": "-73.981811",
+    "country": "USA",
+    "website": "http://shakeandco.com/",
+    "events": "Yes",
+    "cafe": "Yes"
   }
 ]
