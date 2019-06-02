@@ -1356,5 +1356,19 @@
     "website": "http://shakeandco.com/",
     "events": "Yes",
     "cafe": "Yes"
+  },
+  {
+    "name": "Mil Mundos Books",
+    "address": "323 Linden St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11237",
+    "description": "",
+    "lat": "40.698752",
+    "long": "-73.914317",
+    "country": "USA",
+    "website": "https://www.milmundosbooks.com/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
