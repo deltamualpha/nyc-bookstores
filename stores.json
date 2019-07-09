@@ -1204,20 +1204,6 @@
     "cafe": "No"
   },
   {
-    "name": "Brazenhead Books",
-    "address": "The Upper East Side",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "",
-    "description": "Brazenhead is a secret bookstore on the Upper East Side. Yes, I know the address. No, I'm not telling you.",
-    "lat": "40.7828647",
-    "long": "-73.9653551",
-    "country": "USA",
-    "website": "http://www.brazenheadbooks.com/",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "Standards Manual",
     "address": "212 Franklin Street",
     "city": "Brooklyn",
