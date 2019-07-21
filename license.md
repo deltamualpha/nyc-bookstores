@@ -1,4 +1,4 @@
-Copyright (c) 2017, David Ashby
+Copyright (c) 20017-2019, David Ashby
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
