@@ -700,16 +700,16 @@
     "cafe": "No"
   },
   {
-    "name": "Hullabaloo Books",
-    "address": "711A Franklin Ave",
+    "name": "Jewel City Books",
+    "address": "658 Franklin Ave",
     "city": "Brooklyn",
     "state": "NY",
     "postcode": "11238",
-    "description": "A \"microbookstore\" in Crown Heights, Hullabaloo is a cosy, volunteer-run store that stocks new and used books. The selection is necessarily limited because of their space, but it's a nice store to browse and discover in.",
-    "lat": "40.674289",
-    "long": "-73.956471",
+    "description": "Apparently at some point Hullabaloo Books turned into Jewel City Books, attached to a yoga studio of the same name.",
+    "lat": "40.6757639",
+    "long": "-73.9562863",
     "country": "USA",
-    "website": "https://www.facebook.com/HullabalooBooks",
+    "website": "https://www.jewelcityyogabk.com/",
     "events": "Yes",
     "cafe": "No"
   },
