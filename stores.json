@@ -770,7 +770,7 @@
     "cafe": "No"
   },
   {
-    "name": "Boulevard Books and Café",
+    "name": "Boulevard Books",
     "address": "7518 13th Ave",
     "city": "Brooklyn",
     "state": "NY",
@@ -779,7 +779,7 @@
     "lat": "40.61998",
     "long": "-74.0080949",
     "country": "USA",
-    "website": "https://www.facebook.com/BoulevardBooksandCafe",
+    "website": "https://facebook.com/boulevardbookstore/",
     "events": "Yes",
     "cafe": "Yes"
   },
@@ -1059,7 +1059,7 @@
     "lat": "40.756431",
     "long": "-73.981360",
     "country": "USA",
-    "website": "http://www.bookoffusa.com/?cmd=store&shop=newyork",
+    "website": "https://www.bookoffusa.com/store-location2/bookoff-49-w-45th-ny-store/",
     "events": "No",
     "cafe": "No"
   },
