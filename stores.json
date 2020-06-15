@@ -420,20 +420,6 @@
     "cafe": "No"
   },
   {
-    "name": "bookbook",
-    "address": "266 Bleecker St",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10014",
-    "description": "Formerly Biography Bookshop, bookbook is a general-interest book store with a large-than-average children's section and overall deep selection.",
-    "lat": "40.731238",
-    "long": "-74.003262",
-    "country": "USA",
-    "website": "https://bookbooknyc.com/",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "Westsider Rare & Used Books",
     "address": "2246 Broadway",
     "city": "New York",
