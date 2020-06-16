@@ -210,20 +210,6 @@
     "cafe": "No"
   },
   {
-    "name": "Loft Book Store Cafe",
-    "address": "350 Tompkins Ave",
-    "city": "Brooklyn",
-    "state": "NY",
-    "postcode": "11216",
-    "description": "",
-    "lat": "40.685615",
-    "long": "-73.944651",
-    "country": "USA",
-    "website": "http://loft-book-store-cafe.blogspot.com/",
-    "events": "Yes",
-    "cafe": "Yes"
-  },
-  {
     "name": "Dashwood Books",
     "address": "33 Bond St",
     "city": "New York",
