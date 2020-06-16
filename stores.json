@@ -1134,20 +1134,6 @@
     "cafe": "No"
   },
   {
-    "name": "Clic Bookstore & Gallery",
-    "address": "255 Centre St",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10013",
-    "description": "",
-    "lat": "40.7206824",
-    "long": "-73.9979434",
-    "country": "USA",
-    "website": "http://www.clic.com/",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "TASCHEN",
     "address": "107 Greene St",
     "city": "New York",
