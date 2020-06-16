@@ -1286,5 +1286,47 @@
     "website": "https://www.aeonbookstore.com/",
     "events": "Yes",
     "cafe": "No"
+  },
+  {
+    "name": "Avoid The Day Bookstore & Cafe",
+    "address": "99-04 A Rockaway Beach Blvd",
+    "city": "Rockaway Park",
+    "state": "NY",
+    "postcode": "11694",
+    "description": "",
+    "lat": "40.584264",
+    "long": "-73.820613",
+    "country": "USA",
+    "website": "https://www.avoidtheday.org/",
+    "events": "Yes",
+    "cafe": "Yes"
+  },
+  {
+    "name": "Bravo's Book Nook",
+    "address": "115 MacDougal St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "11694",
+    "description": "",
+    "lat": "40.730153",
+    "long": "-74.000720",
+    "country": "USA",
+    "website": "https://www.bravosbooknook.com/",
+    "events": "Yes",
+    "cafe": "No"
+  },
+  {
+    "name": "Karma Bookstore",
+    "address": "136 East Third St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10009",
+    "description": "",
+    "lat": "40.7238937",
+    "long": "-73.9858506",
+    "country": "USA",
+    "website": "https://bookstore.karmakarma.org/",
+    "events": "Yes",
+    "cafe": "No"
   }
 ]
