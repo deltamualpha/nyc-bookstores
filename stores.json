@@ -1092,20 +1092,6 @@
     "cafe": "No"
   },
   {
-    "name": "TASCHEN",
-    "address": "107 Greene St",
-    "city": "New York",
-    "state": "NY",
-    "postcode": "10012",
-    "description": "",
-    "lat": "40.7246706",
-    "long": "-73.9998554",
-    "country": "USA",
-    "website": "https://www.taschen.com/pages/en/stores/979.store_new_york.htm",
-    "events": "Yes",
-    "cafe": "No"
-  },
-  {
     "name": "Rizzoli Bookstore",
     "address": "1133 Broadway",
     "city": "New York",
