@@ -1204,6 +1204,34 @@
     "cafe": "No"
   },
   {
+    "name": "McNally Jackson Books Seaport",
+    "address": "4 Fulton St",
+    "city": "New York",
+    "state": "NY",
+    "postcode": "10038",
+    "description": "",
+    "lat": "40.706510",
+    "long": "-74.003538",
+    "country": "USA",
+    "website": "http://www.mcnallyjackson.com/",
+    "events": "Yes",
+    "cafe": "No"
+  },
+  {
+    "name": "McNally Jackson Books City Point",
+    "address": "445 Albee Square W, Unit G112",
+    "city": "Brooklyn",
+    "state": "NY",
+    "postcode": "11201",
+    "description": "",
+    "lat": "40.691118",
+    "long": "-73.983315",
+    "country": "USA",
+    "website": "http://www.mcnallyjackson.com/",
+    "events": "Yes",
+    "cafe": "No"
+  },
+  {
     "name": "Codex Books",
     "address": "1 Bleecker St",
     "city": "New York",
