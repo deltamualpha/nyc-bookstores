@@ -569,7 +569,7 @@
     "lat": "40.7167151",
     "long": "-73.9591253",
     "country": "USA",
-    "website": "http://www.spoonbillbooks.com/category-s/145.htm",
+    "website": "https://www.spoonbillbooks.com/category-s/103.htm",
     "events": "Yes",
     "cafe": "No"
   },
@@ -1032,20 +1032,6 @@
     "long": "-73.981360",
     "country": "USA",
     "website": "https://www.bookoffusa.com/store-location2/bookoff-49-w-45th-ny-store/",
-    "events": "No",
-    "cafe": "No"
-  },
-  {
-    "name": "Spoonbill",
-    "address": "99 Montrose Ave",
-    "city": "Brooklyn",
-    "state": "NY",
-    "postcode": "11206",
-    "description": "",
-    "lat": "40.707324",
-    "long": "-73.94571",
-    "country": "USA",
-    "website": "http://www.spoonbillbooks.com/category-s/146.htm",
     "events": "No",
     "cafe": "No"
   },
